@@ -2,6 +2,18 @@
   "item.cadens-magic-mod.pink_garnet": "Pink Garnet",
   "item.cadens-magic-mod.raw_pink_garnet": "Raw Pink Garnet",
 
+  "item.cadens-magic-mod.chisel": "Chisel",
+
+  "item.cadens-magic-mod.cauliflower": "Cauliflower",
+
   "block.cadens-magic-mod.pink_garnet_block": "Block of Pink Garnet",
-  "block.cadens-magic-mod.raw_pink_garnet_block": "Block of Raw Pink Garnet"
+  "block.cadens-magic-mod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+
+  "block.cadens-magic-mod.pink_garnet_ore": "Pink Garnet Ore",
+  "block.cadens-magic-mod.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
+
+  "itemgroup.cadens-magic-mod.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.cadens-magic-mod.pink_garnet_blocks": "Pink Garnet Blocks",
+
+  "block.cadens-magic-mod.magic_block": "Magic Block"
 }
