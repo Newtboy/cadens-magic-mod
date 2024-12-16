@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cadens-magic-mod:magic_block"
+    }
+  ],
+  "result": {
+    "count": 32,
+    "id": "cadens-magic-mod:raw_pink_garnet"
+  }
+}

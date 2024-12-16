@@ -1,0 +1,21 @@
+// 1.21	2024-12-15T21:50:25.118489	Caden's Magic Mod/Model Definitions
+e243660e69f9fcef42e7f20b4ebc4108f2de3fba assets/cadens-magic-mod/models/block/magic_block.json
+72fa7b6a26a54a1088d5bccf60251d5c0b2e852d assets/cadens-magic-mod/models/block/pink_garnet_block.json
+b43b664cc1c1a4a525ee6f13ad1090553f860a37 assets/cadens-magic-mod/models/item/magic_block.json
+47711bc4368665c172319b18c5d561bb8671f036 assets/cadens-magic-mod/models/item/raw_pink_garnet_block.json
+2c590862ffcc83297a32442fce5ab146ac2b0558 assets/cadens-magic-mod/models/block/deepslate_pink_garnet_ore.json
+1f0615b33f5dd1c788362428cd87d625fb55bb2d assets/cadens-magic-mod/models/block/pink_garnet_ore.json
+b323359c8fbdace82cd84d648dba8e925d52387d assets/cadens-magic-mod/blockstates/pink_garnet_block.json
+cc6deabcf80e1101b9fdab3ad1754a85ce63e002 assets/cadens-magic-mod/models/item/chisel.json
+9555ad7d855566e010e75e722da768aa21bf650c assets/cadens-magic-mod/models/item/pink_garnet_block.json
+bb1a6e467426e26ad1d49b837cf31e3bfc6e4e68 assets/cadens-magic-mod/models/item/cauliflower.json
+a34cbeb73ea320eb1c2069be71ac259c6050776a assets/cadens-magic-mod/models/item/raw_pink_garnet.json
+339b3e1c51160168a357787c8e0772c0f472b8fe assets/cadens-magic-mod/models/block/raw_pink_garnet_block.json
+081344ab8b8362d86ad526fda8acbd726824ca91 assets/cadens-magic-mod/models/item/deepslate_pink_garnet_ore.json
+261e7ccd81ff6a992f2c876319ad2dd68bdb4957 assets/cadens-magic-mod/models/item/pink_garnet_ore.json
+64c3f96979d1fd1339132bcde670de0cde469824 assets/cadens-magic-mod/blockstates/magic_block.json
+f283c658cfcd33c79a85ea07452f472faa142d98 assets/cadens-magic-mod/models/item/starlight_ashes.json
+15f602a032ab75ba06d0e0af74ab5bcba05f633f assets/cadens-magic-mod/blockstates/raw_pink_garnet_block.json
+c28b5c1584291f8f21cb6ecf10b45e7c158f6ce2 assets/cadens-magic-mod/models/item/pink_garnet.json
+7dd4d1dd90b767ff7751b45e526189138733bb79 assets/cadens-magic-mod/blockstates/pink_garnet_ore.json
+9d042632d741543a48e3b5a23440b7a645fa3161 assets/cadens-magic-mod/blockstates/deepslate_pink_garnet_ore.json
