@@ -1,0 +1,101 @@
+[21:06:12] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21 with Fabric Loader 0.16.9
+[21:06:12] [main/INFO] (FabricLoader) Loading 55 mods:
+	- cadens-magic-mod 1.0.0
+	- fabric-api 0.102.0+1.21
+	- fabric-api-base 0.4.42+6573ed8cd1
+	- fabric-api-lookup-api-v1 1.6.68+b5597344d1
+	- fabric-biome-api-v1 13.0.29+5bd9f1bcd1
+	- fabric-block-api-v1 1.0.22+0af3f5a7d1
+	- fabric-block-view-api-v2 1.0.10+6573ed8cd1
+	- fabric-blockrenderlayer-v1 1.1.52+0af3f5a7d1
+	- fabric-client-tags-api-v1 1.1.15+6573ed8cd1
+	- fabric-command-api-v1 1.2.49+f71b366fd1
+	- fabric-command-api-v2 2.2.28+6ced4dd9d1
+	- fabric-commands-v0 0.2.66+df3654b3d1
+	- fabric-content-registries-v0 8.0.16+b5597344d1
+	- fabric-convention-tags-v1 2.0.19+7f945d5bd1
+	- fabric-convention-tags-v2 2.5.0+c5e2b5c6d1
+	- fabric-crash-report-info-v1 0.2.29+0af3f5a7d1
+	- fabric-data-attachment-api-v1 1.1.27+6a6dfa19d1
+	- fabric-data-generation-api-v1 20.2.16+16c4ae25d1
+	- fabric-dimensions-v1 4.0.0+6fc22b99d1
+	- fabric-entity-events-v1 1.6.12+6fc22b99d1
+	- fabric-events-interaction-v0 0.7.12+ba9dae06d1
+	- fabric-game-rule-api-v1 1.0.53+6ced4dd9d1
+	- fabric-gametest-api-v1 2.0.4+6fc22b99d1
+	- fabric-item-api-v1 11.0.0+afdfc921d1
+	- fabric-item-group-api-v1 4.1.4+78017270d1
+	- fabric-key-binding-api-v1 1.0.47+0af3f5a7d1
+	- fabric-keybindings-v0 0.2.45+df3654b3d1
+	- fabric-lifecycle-events-v1 2.3.12+6c1df360d1
+	- fabric-loot-api-v2 3.0.14+3f89f5a5d1
+	- fabric-loot-api-v3 1.0.2+3f89f5a5d1
+	- fabric-message-api-v1 6.0.13+6573ed8cd1
+	- fabric-model-loading-api-v1 2.0.0+fe474d6bd1
+	- fabric-networking-api-v1 4.2.2+60c3209bd1
+	- fabric-object-builder-api-v1 15.2.0+a551f7a4d1
+	- fabric-particles-v1 4.0.2+6573ed8cd1
+	- fabric-recipe-api-v1 5.0.12+65089712d1
+	- fabric-registry-sync-v0 5.1.2+60c3209bd1
+	- fabric-renderer-api-v1 3.4.0+c705a49cd1
+	- fabric-renderer-indigo 1.7.0+c705a49cd1
+	- fabric-renderer-registries-v1 3.2.68+df3654b3d1
+	- fabric-rendering-data-attachment-v1 0.3.48+73761d2ed1
+	- fabric-rendering-fluids-v1 3.1.6+b5597344d1
+	- fabric-rendering-v0 1.1.71+df3654b3d1
+	- fabric-rendering-v1 5.0.5+df16efd0d1
+	- fabric-resource-conditions-api-v1 4.3.0+8dc279b1d1
+	- fabric-resource-loader-v0 1.3.0+56599129d1
+	- fabric-screen-api-v1 2.0.24+b5597344d1
+	- fabric-screen-handler-api-v1 1.3.86+b5597344d1
+	- fabric-sound-api-v1 1.0.23+6573ed8cd1
+	- fabric-transfer-api-v1 5.1.16+3dccd343d1
+	- fabric-transitive-access-wideners-v1 6.1.0+176f9036d1
+	- fabricloader 0.16.9
+	- java 21
+	- minecraft 1.21
+	- mixinextras 0.4.1
+[21:06:12] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/caden/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[21:06:12] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[21:06:12] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[21:06:12] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[21:06:13] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[21:06:13] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 258 milliseconds
+[21:06:17] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:06:17] [Render thread/INFO] (Minecraft) Setting user: Player947
+[21:06:18] [Render thread/INFO] (cadens-magic-mod) Registerying item tab cadens-magic-mod
+[21:06:18] [Render thread/INFO] (cadens-magic-mod) Lemme get the registry for cadens-magic-mod
+[21:06:18] [Render thread/INFO] (cadens-magic-mod) Registering blocks for cadens-magic-mod
+[21:06:18] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[21:06:18] [Render thread/WARN] (Minecraft) [Fabric Resource Loader] Could not read /Users/caden/vsc projects/cadens-magic-mod/datagen/data/fabricDefaultResourcePacks.dat
+java.io.EOFException: null
+	at java.base/java.util.zip.GZIPInputStream.readUByte(GZIPInputStream.java:279) ~[?:?]
+	at java.base/java.util.zip.GZIPInputStream.readUShort(GZIPInputStream.java:269) ~[?:?]
+	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:175) ~[?:?]
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79) ~[?:?]
+	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91) ~[?:?]
+	at knot/net.minecraft.nbt.NbtIo.decompress(NbtIo.java:93) ~[minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.nbt.NbtIo.readCompressed(NbtIo.java:118) ~[minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.nbt.NbtIo.readCompressed(NbtIo.java:86) ~[minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.client.option.GameOptions.handler$zii000$fabric-resource-loader-v0$onLoad(GameOptions.java:2370) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.client.option.GameOptions.load(GameOptions.java:1360) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.client.option.GameOptions.<init>(GameOptions.java:1222) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:534) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at knot/net.minecraft.client.main.Main.main(Main.java:212) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[21:06:18] [Render thread/INFO] (FabricDataGenHelper) Running data generator for cadens-magic-mod
+[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:block
+[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:block finished after 6 ms
+[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:item
+[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:item finished after 0 ms
+[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Block Loot Tables
+[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Block Loot Tables finished after 8 ms
+[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Model Definitions
+[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Model Definitions finished after 44 ms
+[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Recipes
+[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Recipes finished after 41 ms
+[21:06:18] [Render thread/INFO] (Minecraft) All providers took: 102 ms
+[21:06:18] [Render thread/INFO] (Minecraft) Caching: total files: 112, old count: 50, new count: 113, removed stale: 0, written: 62

@@ -51,5 +51,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.MAGIC_BLOCK)
                 .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.RAW_PINK_GARNET_BLOCK))
                 .offerTo(exporter, Identifier.of(CadensMagicMod.MOD_ID, "raw_pink_garnet_from_magic_block")); // custom tag to have different name
+
+        
     }
 }
