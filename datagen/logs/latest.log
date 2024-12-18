@@ -1,5 +1,5 @@
-[21:06:12] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21 with Fabric Loader 0.16.9
-[21:06:12] [main/INFO] (FabricLoader) Loading 55 mods:
+[21:35:15] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21 with Fabric Loader 0.16.9
+[21:35:15] [main/INFO] (FabricLoader) Loading 55 mods:
 	- cadens-magic-mod 1.0.0
 	- fabric-api 0.102.0+1.21
 	- fabric-api-base 0.4.42+6573ed8cd1
@@ -55,47 +55,28 @@
 	- java 21
 	- minecraft 1.21
 	- mixinextras 0.4.1
-[21:06:12] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/caden/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[21:06:12] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[21:06:12] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[21:06:12] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[21:06:13] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[21:06:13] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 258 milliseconds
-[21:06:17] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:06:17] [Render thread/INFO] (Minecraft) Setting user: Player947
-[21:06:18] [Render thread/INFO] (cadens-magic-mod) Registerying item tab cadens-magic-mod
-[21:06:18] [Render thread/INFO] (cadens-magic-mod) Lemme get the registry for cadens-magic-mod
-[21:06:18] [Render thread/INFO] (cadens-magic-mod) Registering blocks for cadens-magic-mod
-[21:06:18] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[21:06:18] [Render thread/WARN] (Minecraft) [Fabric Resource Loader] Could not read /Users/caden/vsc projects/cadens-magic-mod/datagen/data/fabricDefaultResourcePacks.dat
-java.io.EOFException: null
-	at java.base/java.util.zip.GZIPInputStream.readUByte(GZIPInputStream.java:279) ~[?:?]
-	at java.base/java.util.zip.GZIPInputStream.readUShort(GZIPInputStream.java:269) ~[?:?]
-	at java.base/java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:175) ~[?:?]
-	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79) ~[?:?]
-	at java.base/java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91) ~[?:?]
-	at knot/net.minecraft.nbt.NbtIo.decompress(NbtIo.java:93) ~[minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.nbt.NbtIo.readCompressed(NbtIo.java:118) ~[minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.nbt.NbtIo.readCompressed(NbtIo.java:86) ~[minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.client.option.GameOptions.handler$zii000$fabric-resource-loader-v0$onLoad(GameOptions.java:2370) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.client.option.GameOptions.load(GameOptions.java:1360) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.client.option.GameOptions.<init>(GameOptions.java:1222) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:534) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at knot/net.minecraft.client.main.Main.main(Main.java:212) [minecraft-merged-c2b31d572c-1.21-net.fabricmc.yarn.1_21.1.21+build.9-v2.jar:?]
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) [fabric-loader-0.16.9.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) [fabric-loader-0.16.9.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.9.jar:?]
-	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[21:06:18] [Render thread/INFO] (FabricDataGenHelper) Running data generator for cadens-magic-mod
-[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:block
-[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:block finished after 6 ms
-[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:item
-[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:item finished after 0 ms
-[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Block Loot Tables
-[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Block Loot Tables finished after 8 ms
-[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Model Definitions
-[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Model Definitions finished after 44 ms
-[21:06:18] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Recipes
-[21:06:18] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Recipes finished after 41 ms
-[21:06:18] [Render thread/INFO] (Minecraft) All providers took: 102 ms
-[21:06:18] [Render thread/INFO] (Minecraft) Caching: total files: 112, old count: 50, new count: 113, removed stale: 0, written: 62
+[21:35:15] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/caden/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[21:35:15] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[21:35:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[21:35:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[21:35:16] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[21:35:17] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 331 milliseconds
+[21:35:20] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:35:21] [Render thread/INFO] (Minecraft) Setting user: Player275
+[21:35:21] [Render thread/INFO] (cadens-magic-mod) Registerying item tab cadens-magic-mod
+[21:35:21] [Render thread/INFO] (cadens-magic-mod) Lemme get the registry for cadens-magic-mod
+[21:35:21] [Render thread/INFO] (cadens-magic-mod) Registering blocks for cadens-magic-mod
+[21:35:21] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[21:35:21] [Render thread/INFO] (FabricDataGenHelper) Running data generator for cadens-magic-mod
+[21:35:21] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:block
+[21:35:21] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:block finished after 6 ms
+[21:35:21] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:item
+[21:35:21] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:item finished after 0 ms
+[21:35:21] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Block Loot Tables
+[21:35:21] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Block Loot Tables finished after 19 ms
+[21:35:21] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Model Definitions
+[21:35:21] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Model Definitions finished after 34 ms
+[21:35:21] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Recipes
+[21:35:21] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Recipes finished after 26 ms
+[21:35:21] [Render thread/INFO] (Minecraft) All providers took: 89 ms
+[21:35:21] [Render thread/INFO] (Minecraft) Caching: total files: 112, old count: 112, new count: 113, removed stale: 0, written: 0
