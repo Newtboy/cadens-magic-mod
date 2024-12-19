@@ -1,6 +1,7 @@
 package caden.cadensmagicmod;
 
 import caden.cadensmagicmod.block.ModBlocks;
+import caden.cadensmagicmod.component.ModDataComponentTypes;
 import caden.cadensmagicmod.item.ModItemGroups;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -19,6 +20,8 @@ public class CadensMagicMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
