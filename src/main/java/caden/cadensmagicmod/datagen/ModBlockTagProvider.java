@@ -1,6 +1,7 @@
 package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
+import caden.cadensmagicmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
@@ -30,5 +31,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
 
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
+                .add(ModBlocks.MAGIC_BLOCK)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 }

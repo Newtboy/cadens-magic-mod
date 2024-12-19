@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ],
+  "remove": [
+    "#cadens-magic-mod:needs_pink_garnet_tool"
+  ]
+}

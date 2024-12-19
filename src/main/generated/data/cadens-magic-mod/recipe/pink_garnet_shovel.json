@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "cadens-magic-mod:pink_garnet"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " R ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cadens-magic-mod:pink_garnet_shovel"
+  }
+}
