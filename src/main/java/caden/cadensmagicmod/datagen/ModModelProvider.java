@@ -21,7 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_BLOCK); // replace some stuff with custom wood later
 
         pinkGarnetPool.stairs(ModBlocks.PINK_GARNET_STAIRS);
         pinkGarnetPool.slab(ModBlocks.PINK_GARNET_SLAB);

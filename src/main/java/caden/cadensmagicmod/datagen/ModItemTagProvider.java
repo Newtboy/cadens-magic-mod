@@ -19,7 +19,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) { // change to part of the wand recipe
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.PINK_GARNET)
                 .add(ModItems.RAW_PINK_GARNET)
