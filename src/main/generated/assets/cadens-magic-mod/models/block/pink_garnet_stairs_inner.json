@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cadens-magic-mod:block/pink_garnet_block",
+    "side": "cadens-magic-mod:block/pink_garnet_block",
+    "top": "cadens-magic-mod:block/pink_garnet_block"
+  }
+}

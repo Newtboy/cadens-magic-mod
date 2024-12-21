@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "cadens-magic-mod:block/pink_garnet_door_bottom",
+    "top": "cadens-magic-mod:block/pink_garnet_door_top"
+  }
+}

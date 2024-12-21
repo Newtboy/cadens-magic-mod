@@ -2,6 +2,7 @@ package caden.cadensmagicmod.block;
 
 import caden.cadensmagicmod.CadensMagicMod;
 import caden.cadensmagicmod.block.custom.MagicBlock;
+import caden.cadensmagicmod.block.custom.MoonoakBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -18,7 +19,7 @@ public class ModBlocks {
 
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+                    .requiresTool().sounds(BlockSoundGroup.BAMBOO).sounds(BlockSoundGroup.AZALEA_LEAVES)));
 
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(3f)
@@ -28,6 +29,9 @@ public class ModBlocks {
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool())
             );
+    public static final Block MOON_OAK_LOG = registerBlock("moon_oak_log",
+            new MoonoakBlock(AbstractBlock.Settings.create()
+                    .strength(5f).requiresTool().burnable()));
 
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",

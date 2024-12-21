@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "moon_visible=false": {
+      "model": "cadens-magic-mod:block/moon_oak_log"
+    },
+    "moon_visible=true": {
+      "model": "cadens-magic-mod:block/moon_oak_log_on"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
+import caden.cadensmagicmod.block.custom.MoonoakBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -40,6 +41,11 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+        Identifier moonOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.MOON_OAK_LOG, blockStateModelGenerator.modelCollector);
+        Identifier moonOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LOG, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonoakBlock.MOON_VISIBLE, moonOnIdentifier, moonOffIdentifier)));
     }
 
     @Override
