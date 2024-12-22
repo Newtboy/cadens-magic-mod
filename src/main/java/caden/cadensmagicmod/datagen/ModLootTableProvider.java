@@ -2,29 +2,45 @@ package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
 import caden.cadensmagicmod.item.ModItems;
+import caden.cadensmagicmod.loot.NoneOfLootCondition;
+import caden.cadensmagicmod.loot.WorldTimeLootCondition;
+import caden.cadensmagicmod.loot.WorldWeatherLootCondition;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.AllOfLootCondition;
+import net.minecraft.loot.condition.AnyOfLootCondition;
+import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
+import static caden.cadensmagicmod.block.ModBlocks.MOON_OAK_LOG;
+
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
+
+    static LootCondition IS_CLEAR_AND_NIGHT =
+            new AllOfLootCondition.Builder()
+                    .and(() -> new WorldWeatherLootCondition(WorldWeatherLootCondition.WeatherType.CLEAR))
+                    .and(() -> new WorldTimeLootCondition(13000, 23000)) // Nighttime in ticks
+                    .build();
 
     @Override
     public void generate() {
@@ -49,6 +65,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.PINK_GARNET_DOOR, doorDrops(ModBlocks.PINK_GARNET_DOOR));
         addDrop(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        addDrop(MOON_OAK_LOG, (block) -> LootTable.builder()
+                .pool(
+                        LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .conditionally(IS_CLEAR_AND_NIGHT)
+                                .with(ItemEntry.builder(MOON_OAK_LOG))
+                ).pool(
+                        LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .conditionally(() -> new NoneOfLootCondition(
+                                        IS_CLEAR_AND_NIGHT
+                                ))
+                                .with(ItemEntry.builder(Items.OAK_LOG))
+                ));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

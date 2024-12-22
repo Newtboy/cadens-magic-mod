@@ -31,7 +31,7 @@ public class ModBlocks {
             );
     public static final Block MOON_OAK_LOG = registerBlock("moon_oak_log",
             new MoonoakBlock(AbstractBlock.Settings.create()
-                    .strength(5f).requiresTool().burnable()));
+                    .strength(5f).burnable()));
 
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
