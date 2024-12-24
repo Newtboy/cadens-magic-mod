@@ -1,4 +1,4 @@
-// 1.21	2024-12-22T15:14:12.187502	Caden's Magic Mod/Model Definitions
+// 1.21	2024-12-23T21:59:08.817141	Caden's Magic Mod/Model Definitions
 efd3a4dbabc6ae079e41a651d9663fdeea4b172a assets/cadens-magic-mod/models/block/pink_garnet_stairs.json
 7f7aff90a9541a7f233e97d3e1c2d4eb8ab9be7b assets/cadens-magic-mod/models/block/pink_garnet_fence_side.json
 72fa7b6a26a54a1088d5bccf60251d5c0b2e852d assets/cadens-magic-mod/models/block/pink_garnet_block.json
@@ -15,26 +15,27 @@ d9ad55dba3c93b6e152b5c9ef83a0b9ceb921a17 assets/cadens-magic-mod/models/block/pi
 64a36fbd857b8207adae4110c29e83a4eefc413c assets/cadens-magic-mod/models/block/pink_garnet_fence_inventory.json
 057a1f109a381cb72b245cee13ced60aa41589c2 assets/cadens-magic-mod/models/block/pink_garnet_door_top_left.json
 787feb0d931b032fde564a6fd56fc54f6acd6125 assets/cadens-magic-mod/models/block/pink_garnet_trapdoor_open.json
+bfb6b6de556dce1a327d7d5a51c6a6ab613d17be assets/cadens-magic-mod/models/item/pink_garnet_hammer.json
 632b8cf81a1eadb4113ec0b5826d8b744b7376d8 assets/cadens-magic-mod/models/block/pink_garnet_fence_gate_wall.json
 15f602a032ab75ba06d0e0af74ab5bcba05f633f assets/cadens-magic-mod/blockstates/raw_pink_garnet_block.json
 9555ad7d855566e010e75e722da768aa21bf650c assets/cadens-magic-mod/models/item/pink_garnet_block.json
 c671ad5c3d7624ec275f0fe850e77fbe1368d197 assets/cadens-magic-mod/models/block/pink_garnet_door_top_right.json
 a2ad42f0457ec6c7079ff7c244fe447b31d232c6 assets/cadens-magic-mod/models/item/pink_garnet_lamp.json
 81e75aa0ab3b8022404e3932111846914069fec2 assets/cadens-magic-mod/models/item/pink_garnet_shovel.json
-5ff7fa3a5935cd12d02559f5f5a067cd0f2eb82d assets/cadens-magic-mod/models/item/pink_garnet_fence.json
 62af9bea6483341b6cf3ffbbd52c39d6ff0978b4 assets/cadens-magic-mod/models/block/pink_garnet_wall_side.json
+5ff7fa3a5935cd12d02559f5f5a067cd0f2eb82d assets/cadens-magic-mod/models/item/pink_garnet_fence.json
 e657c254ed4aca36a917e896143a4b43d808e8d6 assets/cadens-magic-mod/models/block/pink_garnet_fence_gate.json
 2add934a599d245ce37aa8d1c780198a9d03a8bb assets/cadens-magic-mod/blockstates/pink_garnet_slab.json
 be3ae71ccd716ed4146901473f9163a9e0f1170f assets/cadens-magic-mod/blockstates/pink_garnet_pressure_plate.json
 7dd4d1dd90b767ff7751b45e526189138733bb79 assets/cadens-magic-mod/blockstates/pink_garnet_ore.json
-b7fb3abea6aeca9dfae5bac08f653d87206c5bee assets/cadens-magic-mod/models/block/pink_garnet_slab.json
 1f0615b33f5dd1c788362428cd87d625fb55bb2d assets/cadens-magic-mod/models/block/pink_garnet_ore.json
+b7fb3abea6aeca9dfae5bac08f653d87206c5bee assets/cadens-magic-mod/models/block/pink_garnet_slab.json
 d04878a8a6ae88c2aebbf957052e7021c04c88f0 assets/cadens-magic-mod/models/item/pink_garnet_trapdoor.json
 c28b5c1584291f8f21cb6ecf10b45e7c158f6ce2 assets/cadens-magic-mod/models/item/pink_garnet.json
 2dc5383ee1ab34f557716acfabc0bd41d5e2136d assets/cadens-magic-mod/models/item/pink_garnet_sword.json
 f283c658cfcd33c79a85ea07452f472faa142d98 assets/cadens-magic-mod/models/item/starlight_ashes.json
-b57b3df5f7280d9f647e6bb498d4462cc7f6ac96 assets/cadens-magic-mod/models/block/pink_garnet_wall_post.json
 8bf48febdf8beab34ec76df6c2694fc1eb91074f assets/cadens-magic-mod/models/block/pink_garnet_button_pressed.json
+b57b3df5f7280d9f647e6bb498d4462cc7f6ac96 assets/cadens-magic-mod/models/block/pink_garnet_wall_post.json
 5529e3c75ccb19d8947a03d64dd295c3c98ac263 assets/cadens-magic-mod/models/block/pink_garnet_stairs_outer.json
 64c3f96979d1fd1339132bcde670de0cde469824 assets/cadens-magic-mod/blockstates/magic_block.json
 261e7ccd81ff6a992f2c876319ad2dd68bdb4957 assets/cadens-magic-mod/models/item/pink_garnet_ore.json
@@ -78,7 +79,7 @@ e001f238dcf7d3be93c39f564291dacc13312918 assets/cadens-magic-mod/models/block/pi
 46d38cd2ac5ff2edb8f2787ef4195f4d369bccc2 assets/cadens-magic-mod/models/block/pink_garnet_trapdoor_bottom.json
 b373fca4fe69cf26a15f6f610229a5e976de9030 assets/cadens-magic-mod/models/item/pink_garnet_hoe.json
 cc1ad806e5fab11bc200e51073d7696b41f6a862 assets/cadens-magic-mod/models/item/pink_garnet_fence_gate.json
-74375d4a15c90a95a280d3c12894d8b20dd30df4 assets/cadens-magic-mod/models/block/pink_garnet_trapdoor_top.json
 35831fcd11713a552bf6fedc3026459b7a05da87 assets/cadens-magic-mod/models/item/pink_garnet_pressure_plate.json
+74375d4a15c90a95a280d3c12894d8b20dd30df4 assets/cadens-magic-mod/models/block/pink_garnet_trapdoor_top.json
 d7672df4c6f21fc9057b8a32db29d477d6f1f938 assets/cadens-magic-mod/models/item/moon_oak_log.json
 c6a19ebf19a021859c4b5d89b2e53b5c8bd37a13 assets/cadens-magic-mod/models/item/pink_garnet_slab.json

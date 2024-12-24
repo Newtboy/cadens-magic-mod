@@ -14,9 +14,12 @@
               "condition": "cadens-magic-mod:weather"
             },
             {
-              "condition": "cadens-magic-mod:time",
-              "max": 23000,
-              "min": 13000
+              "condition": "minecraft:time_check",
+              "period": 24000,
+              "value": {
+                "max": 23000.0,
+                "min": 13000.0
+              }
             }
           ]
         }
@@ -45,9 +48,12 @@
                   "condition": "cadens-magic-mod:weather"
                 },
                 {
-                  "condition": "cadens-magic-mod:time",
-                  "max": 23000,
-                  "min": 13000
+                  "condition": "minecraft:time_check",
+                  "period": 24000,
+                  "value": {
+                    "max": 23000.0,
+                    "min": 13000.0
+                  }
                 }
               ]
             }

@@ -1,5 +1,6 @@
 package caden.cadensmagicmod.loot;
 
+import caden.cadensmagicmod.CadensMagicMod;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -22,7 +23,16 @@ public record WorldTimeLootCondition(long min, long max) implements LootConditio
 
     @Override
     public boolean test(LootContext lootContext) {
-        return lootContext.getWorld().getTimeOfDay() >= min
-                && lootContext.getWorld().getTime() <= max;
+        var time = normalize(lootContext.getWorld().getTimeOfDay());
+        return time >= min
+                && time <= max;
+    }
+
+    public static long normalize(long time) {
+        final long fullDay = 24000;
+        final long minecraftTimeOffset = 6000L;
+        time += minecraftTimeOffset;
+        time %= fullDay;
+        return time;
     }
 }

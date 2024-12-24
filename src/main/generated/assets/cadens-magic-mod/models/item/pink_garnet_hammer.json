@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "cadens-magic-mod:item/pink_garnet_hammer"
+  }
+}

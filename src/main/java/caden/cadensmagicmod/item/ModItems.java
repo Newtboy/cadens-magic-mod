@@ -2,6 +2,7 @@ package caden.cadensmagicmod.item;
 
 import caden.cadensmagicmod.CadensMagicMod;
 import caden.cadensmagicmod.item.custom.ChiselItem;
+import caden.cadensmagicmod.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -44,6 +45,10 @@ public class ModItems {
     public static final Item PINK_GARNET_AXE = registerItem("pink_garnet_axe",
             new AxeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -3f))));
+
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
+            new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(CadensMagicMod.MOD_ID, name), item);

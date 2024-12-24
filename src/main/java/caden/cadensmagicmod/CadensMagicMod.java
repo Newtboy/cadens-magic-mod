@@ -5,8 +5,11 @@ import caden.cadensmagicmod.component.ModDataComponentTypes;
 import caden.cadensmagicmod.item.ModItemGroups;
 import caden.cadensmagicmod.item.ModItems;
 import caden.cadensmagicmod.loot.ModLootConditionTypes;
+import caden.cadensmagicmod.util.HammerUsageEvent;
+import caden.cadensmagicmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +29,10 @@ public class CadensMagicMod implements ModInitializer {
 
 		ModLootConditionTypes.register();
 
+		ModWorldGeneration.GenerateModWorldGen();
+
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }
