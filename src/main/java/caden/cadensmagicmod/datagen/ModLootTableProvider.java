@@ -29,6 +29,7 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
+import static caden.cadensmagicmod.block.ModBlocks.MOON_OAK_LEAVES;
 import static caden.cadensmagicmod.block.ModBlocks.MOON_OAK_LOG;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
@@ -78,6 +79,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .rolls(ConstantLootNumberProvider.create(1))
                                 .conditionally(new NoneOfLootCondition(IS_CLEAR_AND_NIGHT)) // Use NoneOfLootCondition directly
                                 .with(ItemEntry.builder(Items.OAK_LOG)) // Drops OAK_LOG when the condition is NOT met
+                ));
+        addDrop(MOON_OAK_LEAVES, LootTable.builder()
+                .pool(
+                        LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .conditionally(IS_CLEAR_AND_NIGHT)
+                                .with(ItemEntry.builder(MOON_OAK_LEAVES))
+                ).pool(
+                        LootPool.builder()
+                                .rolls(ConstantLootNumberProvider.create(1))
+                                .conditionally(new NoneOfLootCondition(IS_CLEAR_AND_NIGHT))
+                                .with(ItemEntry.builder(Items.OAK_LEAVES))
                 ));
     }
 

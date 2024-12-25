@@ -1,7 +1,9 @@
-// 1.21	2024-12-23T21:59:08.816939	Caden's Magic Mod/Tags for minecraft:block
-f91bc64953ef7ebf02b8dd7c2c515db92d218bc8 data/minecraft/tags/block/fence_gates.json
-8d1c7f7ab962d236e611bc8969b7da53fbc14edf data/cadens-magic-mod/tags/block/needs_pink_garnet_tool.json
-114a26ad901959d9382e92c0b7e0819a4b6793c4 data/minecraft/tags/block/walls.json
-d8dd4bdcde235d54a974b6d69b065ee5c5412281 data/minecraft/tags/block/fences.json
-c4a91c2229707a6133abf751dc20d5bfdc608904 data/minecraft/tags/block/needs_iron_tool.json
-d6162afd7c7c2f876d960c2ccda4a9ddab29ae16 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21	2024-12-24T19:05:57.6058946	Caden's Magic Mod/Tags for minecraft:block
+114a26ad901959d9382e92c0b7e0819a4b6793c4 data\minecraft\tags\block\walls.json
+8d1c7f7ab962d236e611bc8969b7da53fbc14edf data\cadens-magic-mod\tags\block\needs_pink_garnet_tool.json
+56df01ddcfeb19552f033933d4d4381fe63bc762 data\minecraft\tags\block\logs.json
+f91bc64953ef7ebf02b8dd7c2c515db92d218bc8 data\minecraft\tags\block\fence_gates.json
+d6162afd7c7c2f876d960c2ccda4a9ddab29ae16 data\minecraft\tags\block\mineable\pickaxe.json
+d8dd4bdcde235d54a974b6d69b065ee5c5412281 data\minecraft\tags\block\fences.json
+c4a91c2229707a6133abf751dc20d5bfdc608904 data\minecraft\tags\block\needs_iron_tool.json
+a90194aca5f7923f93ac031f0803e48b976312eb data\minecraft\tags\block\leaves.json

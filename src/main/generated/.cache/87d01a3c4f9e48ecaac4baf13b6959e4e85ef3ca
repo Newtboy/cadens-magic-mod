@@ -1,16 +1,17 @@
-// 1.21	2024-12-23T21:59:08.817896	Caden's Magic Mod/Block Loot Tables
-fd06f6560c499147c4820f69d517ecb1d874dbc7 data/cadens-magic-mod/loot_table/blocks/moon_oak_log.json
-ce3c423de2edfbf977bb946a5a11203977f63084 data/cadens-magic-mod/loot_table/blocks/pink_garnet_wall.json
-6257cd088ad7dafb8b4d2f9e28d5ff2748191d04 data/cadens-magic-mod/loot_table/blocks/raw_pink_garnet_block.json
-d27f28cba385b3f28eb5b232b93b277b4cf55c81 data/cadens-magic-mod/loot_table/blocks/magic_block.json
-4c6261bb4dfdcb9d55cf9f752bdb0313424346e9 data/cadens-magic-mod/loot_table/blocks/pink_garnet_ore.json
-2d9742650c62722ed2f55137ce7eaa6cf06e4b20 data/cadens-magic-mod/loot_table/blocks/pink_garnet_fence_gate.json
-40d0471ca8cb42de883af6bffe546b4b229ec4bf data/cadens-magic-mod/loot_table/blocks/pink_garnet_slab.json
-23112521cb88f366aa13d05e910a061704a68337 data/cadens-magic-mod/loot_table/blocks/pink_garnet_block.json
-ace4e8b525c5bcfa208201c6c1d0821b7218422e data/cadens-magic-mod/loot_table/blocks/pink_garnet_door.json
-547cb0786320d8652790244acc540574b909a0c8 data/cadens-magic-mod/loot_table/blocks/pink_garnet_trapdoor.json
-c23c22d871cfbe9fa67ecdc62f537ada8688c144 data/cadens-magic-mod/loot_table/blocks/pink_garnet_fence.json
-d40b260670445af24814862d83251f0299123416 data/cadens-magic-mod/loot_table/blocks/pink_garnet_button.json
-75466d53f1f47acd7b30e1329a361e145e2da6be data/cadens-magic-mod/loot_table/blocks/pink_garnet_pressure_plate.json
-96eec069ed7626f9fb024521c6379fe5e3273ac0 data/cadens-magic-mod/loot_table/blocks/pink_garnet_stairs.json
-ba9bfca5051b0e2edd5cd73bcd0a66c10a669a83 data/cadens-magic-mod/loot_table/blocks/deepslate_pink_garnet_ore.json
+// 1.21	2024-12-24T19:05:57.6098978	Caden's Magic Mod/Block Loot Tables
+547cb0786320d8652790244acc540574b909a0c8 data\cadens-magic-mod\loot_table\blocks\pink_garnet_trapdoor.json
+2d9742650c62722ed2f55137ce7eaa6cf06e4b20 data\cadens-magic-mod\loot_table\blocks\pink_garnet_fence_gate.json
+ba9bfca5051b0e2edd5cd73bcd0a66c10a669a83 data\cadens-magic-mod\loot_table\blocks\deepslate_pink_garnet_ore.json
+6257cd088ad7dafb8b4d2f9e28d5ff2748191d04 data\cadens-magic-mod\loot_table\blocks\raw_pink_garnet_block.json
+ce3c423de2edfbf977bb946a5a11203977f63084 data\cadens-magic-mod\loot_table\blocks\pink_garnet_wall.json
+ace4e8b525c5bcfa208201c6c1d0821b7218422e data\cadens-magic-mod\loot_table\blocks\pink_garnet_door.json
+5ca5d7ea5395628b8af8edc844cf6545f9d22626 data\cadens-magic-mod\loot_table\blocks\moon_oak_leaves.json
+4c6261bb4dfdcb9d55cf9f752bdb0313424346e9 data\cadens-magic-mod\loot_table\blocks\pink_garnet_ore.json
+c23c22d871cfbe9fa67ecdc62f537ada8688c144 data\cadens-magic-mod\loot_table\blocks\pink_garnet_fence.json
+75466d53f1f47acd7b30e1329a361e145e2da6be data\cadens-magic-mod\loot_table\blocks\pink_garnet_pressure_plate.json
+d27f28cba385b3f28eb5b232b93b277b4cf55c81 data\cadens-magic-mod\loot_table\blocks\magic_block.json
+fd06f6560c499147c4820f69d517ecb1d874dbc7 data\cadens-magic-mod\loot_table\blocks\moon_oak_log.json
+d40b260670445af24814862d83251f0299123416 data\cadens-magic-mod\loot_table\blocks\pink_garnet_button.json
+23112521cb88f366aa13d05e910a061704a68337 data\cadens-magic-mod\loot_table\blocks\pink_garnet_block.json
+96eec069ed7626f9fb024521c6379fe5e3273ac0 data\cadens-magic-mod\loot_table\blocks\pink_garnet_stairs.json
+40d0471ca8cb42de883af6bffe546b4b229ec4bf data\cadens-magic-mod\loot_table\blocks\pink_garnet_slab.json

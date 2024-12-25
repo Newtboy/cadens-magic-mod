@@ -8,13 +8,15 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
+
     public ModRegistryDataGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup, Entries entries) {
+    protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
     }
 
     @Override

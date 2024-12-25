@@ -3,16 +3,16 @@ package caden.cadensmagicmod.block.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class MoonoakBlock extends Block {
+public class MoonOakLeafBlock extends Block {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
 
-    public MoonoakBlock(Settings settings) {
+    public MoonOakLeafBlock(Settings settings) {
         super(settings);
         setDefaultState(this.getDefaultState().with(MOON_VISIBLE, false));
     }

@@ -2,6 +2,7 @@ package caden.cadensmagicmod.block;
 
 import caden.cadensmagicmod.CadensMagicMod;
 import caden.cadensmagicmod.block.custom.MagicBlock;
+import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
 import caden.cadensmagicmod.block.custom.MoonoakBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -29,9 +30,24 @@ public class ModBlocks {
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool())
             );
+
+
     public static final Block MOON_OAK_LOG = registerBlock("moon_oak_log",
-            new MoonoakBlock(AbstractBlock.Settings.create()
-                    .strength(5f).burnable()));
+            new MoonoakBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_MOON_OAK_LOG = registerBlock("stripped_moon_oak_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block MOON_OAK_WOOD = registerBlock("moon_oak_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_MOON_OAK_WOOD = registerBlock("moon_oak_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final Block MOON_OAK_PLANKS = registerBlock("moon_oak_planks",
+            new MoonoakBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block MOON_OAK_LEAVES = registerBlock("moon_oak_leaves",
+            new MoonOakLeafBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+
+    public static final Block MOON_OAK_SAPLING = registerBlock("moon_oak_sapling",
+            new SaplingBlock( , AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",

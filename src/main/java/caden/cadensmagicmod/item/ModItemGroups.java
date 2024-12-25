@@ -62,6 +62,14 @@ public class ModItemGroups {
 
                     }).build());
 
+    public static final ItemGroup MAGIC_MOD_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(CadensMagicMod.MOD_ID, "magic_mod_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.MOON_OAK_LOG))
+                    .displayName(Text.translatable("itemgroup.cadens-magic-mod.magic_mod_group"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.MOON_OAK_LOG);
+                    }).build());
+
     public static void registerItemGroups() {
 
         CadensMagicMod.LOGGER.info("Registerying item tab " + CadensMagicMod.MOD_ID);

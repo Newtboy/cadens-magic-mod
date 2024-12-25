@@ -1,11 +1,13 @@
 package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
+import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
 import caden.cadensmagicmod.block.custom.MoonoakBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
@@ -46,6 +48,11 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier moonOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LOG, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonoakBlock.MOON_VISIBLE, moonOnIdentifier, moonOffIdentifier)));
+
+        Identifier moonLeafOffIdentifier = TexturedModel.CUBE_ALL.upload(Blocks.OAK_LEAVES, blockStateModelGenerator.modelCollector);
+        Identifier moonLeafOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LEAVES)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonOakLeafBlock.MOON_VISIBLE, moonOnIdentifier, moonOffIdentifier)));
     }
 
     @Override
