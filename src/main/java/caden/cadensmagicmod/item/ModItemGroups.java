@@ -68,6 +68,12 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.cadens-magic-mod.magic_mod_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.MOON_OAK_LOG);
+                        entries.add(ModBlocks.MOON_OAK_LEAVES);
+                        entries.add(ModBlocks.MOON_OAK_PLANKS);
+                        entries.add(ModBlocks.MOON_OAK_WOOD);
+                        entries.add(ModBlocks.STRIPPED_MOON_OAK_LOG);
+                        entries.add(ModBlocks.STRIPPED_MOON_OAK_WOOD);
+                        entries.add(ModBlocks.MOON_OAK_SAPLING);
                     }).build());
 
     public static void registerItemGroups() {

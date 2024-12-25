@@ -5,6 +5,7 @@ import caden.cadensmagicmod.item.ModItems;
 import caden.cadensmagicmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -37,5 +38,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_PICKAXE);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_GARNET_HOE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.MOON_OAK_LOG.asItem())
+                .add(ModBlocks.MOON_OAK_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_MOON_OAK_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_MOON_OAK_LOG.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.MOON_OAK_PLANKS.asItem());
     }
 }
