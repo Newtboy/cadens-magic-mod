@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 
 public class MoonoakBlock extends Block {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
+    public static final BooleanProperty NATURAL = BooleanProperty.of("spawned");
 
     public MoonoakBlock(Settings settings) {
         super(settings);

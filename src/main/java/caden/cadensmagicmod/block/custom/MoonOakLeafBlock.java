@@ -2,6 +2,7 @@ package caden.cadensmagicmod.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -11,21 +12,30 @@ import net.minecraft.world.World;
 
 public class MoonOakLeafBlock extends Block {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
+    public static final BooleanProperty NATURAL = BooleanProperty.of("spawned");
 
     public MoonOakLeafBlock(Settings settings) {
         super(settings);
-        setDefaultState(this.getDefaultState().with(MOON_VISIBLE, false));
+        setDefaultState(this.getDefaultState().with(MOON_VISIBLE, false).with(NATURAL, true));
     }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(MOON_VISIBLE);
+        builder.add(NATURAL);
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        // Set NATURAL to false if placed by the player
+        return this.getDefaultState().with(NATURAL, false);
     }
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         boolean moonVisible = isMoonVisible(world);
-        world.setBlockState(pos, state.with(MOON_VISIBLE, moonVisible), 3);
+        boolean isNatural = state.get(NATURAL);
+        world.setBlockState(pos, state.with(MOON_VISIBLE, moonVisible).with(NATURAL, isNatural), 3);
 
         world.scheduleBlockTick(pos, this, 20);
     }

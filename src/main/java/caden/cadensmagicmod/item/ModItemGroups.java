@@ -73,7 +73,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOON_OAK_WOOD);
                         entries.add(ModBlocks.STRIPPED_MOON_OAK_LOG);
                         entries.add(ModBlocks.STRIPPED_MOON_OAK_WOOD);
-                        entries.add(ModBlocks.MOON_OAK_SAPLING);
+//                        entries.add(ModBlocks.MOON_OAK_SAPLING);
                     }).build());
 
     public static void registerItemGroups() {
