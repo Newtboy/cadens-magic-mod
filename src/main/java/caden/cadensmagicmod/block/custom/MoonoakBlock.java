@@ -5,13 +5,19 @@ import net.minecraft.block.BlockState;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.EnumProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
 public class MoonoakBlock extends Block {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
     public static final BooleanProperty NATURAL = BooleanProperty.of("spawned");
+    public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
+
+
 
     public MoonoakBlock(Settings settings) {
         super(settings);
@@ -21,6 +27,8 @@ public class MoonoakBlock extends Block {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(MOON_VISIBLE);
+        builder.add(AXIS);
+        builder.add(NATURAL);
     }
 
     @Override
@@ -37,10 +45,7 @@ public class MoonoakBlock extends Block {
         }
         else if (world.getDimension().hasSkyLight()) {
             long time = world.getTimeOfDay() % 24000;
-            System.out.println("Current time: " + time);
-            boolean visible = time >= 13000 && time <= 23000;
-            System.out.println("Is moon visible? " + visible);
-            return visible;
+            return time >= 13000 && time <= 23000;
         }
         return false;
     }

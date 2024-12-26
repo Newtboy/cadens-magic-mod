@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "cadens-magic-mod:block/moon_oak_sapling"
+  }
+}

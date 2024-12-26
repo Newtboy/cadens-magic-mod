@@ -45,7 +45,6 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         Identifier moonOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.MOON_OAK_LOG, blockStateModelGenerator.modelCollector);
-
         Identifier moonOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LOG, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonoakBlock.MOON_VISIBLE, moonOnIdentifier, moonOffIdentifier)));
@@ -53,11 +52,11 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier moonLeafOffIdentifier = TexturedModel.CUBE_ALL.upload(Blocks.OAK_LEAVES, blockStateModelGenerator.modelCollector);
         Identifier moonLeafOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LEAVES)
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonOakLeafBlock.MOON_VISIBLE, moonOnIdentifier, moonOffIdentifier)));
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonOakLeafBlock.MOON_VISIBLE, moonLeafOnIdentifier, moonLeafOffIdentifier)));
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_PLANKS);
-        blockStateModelGenerator.registerSingleton(ModBlocks.MOON_OAK_LEAVES, TexturedModel.LEAVES);
-        //blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOON_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+//        blockStateModelGenerator.registerSingleton(ModBlocks.MOON_OAK_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOON_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

@@ -92,7 +92,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .with(ItemEntry.builder(Items.OAK_LEAVES))
                 ));
         addDrop(MOON_OAK_PLANKS);
-        //addDrop(MOON_OAK_SAPLING);
+        addDrop(MOON_OAK_SAPLING);
         addDrop(MOON_OAK_WOOD);
         addDrop(STRIPPED_MOON_OAK_WOOD);
         addDrop(STRIPPED_MOON_OAK_LOG);

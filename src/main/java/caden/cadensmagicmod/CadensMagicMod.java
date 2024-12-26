@@ -10,7 +10,9 @@ import caden.cadensmagicmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.block.FireBlock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,5 +36,9 @@ public class CadensMagicMod implements ModInitializer {
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MOON_OAK_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MOON_OAK_PLANKS,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MOON_OAK_LEAVES,30,60);
 	}
 }

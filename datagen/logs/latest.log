@@ -1,5 +1,5 @@
-[22:15:11] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21 with Fabric Loader 0.16.9
-[22:15:11] [main/INFO] (FabricLoader) Loading 55 mods:
+[17:32:25] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21 with Fabric Loader 0.16.9
+[17:32:26] [main/INFO] (FabricLoader) Loading 55 mods:
 	- cadens-magic-mod 1.0.0
 	- fabric-api 0.102.0+1.21
 	- fabric-api-base 0.4.42+6573ed8cd1
@@ -55,11 +55,31 @@
 	- java 21
 	- minecraft 1.21
 	- mixinextras 0.4.1
-[22:15:11] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/caden/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[22:15:11] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[22:15:11] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[22:15:12] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[22:15:13] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 219 milliseconds
-[22:15:16] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[22:15:16] [Render thread/INFO] (Minecraft) Setting user: Player266
-[22:15:16] [Render thread/INFO] (cadens-magic-mod) Registerying item tab cadens-magic-mod
+[17:32:26] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/JoHannah%20McAhren/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[17:32:26] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[17:32:26] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[17:32:26] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[17:32:28] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[17:32:29] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 540 milliseconds
+[17:32:36] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:32:36] [Render thread/INFO] (Minecraft) Setting user: Player283
+[17:32:36] [Render thread/INFO] (cadens-magic-mod) Registerying item tab cadens-magic-mod
+[17:32:36] [Render thread/INFO] (cadens-magic-mod) Lemme get the registry for cadens-magic-mod
+[17:32:36] [Render thread/INFO] (cadens-magic-mod) Registering blocks for cadens-magic-mod
+[17:32:36] [Render thread/INFO] (cadens-magic-mod) Registering data component types for cadens-magic-mod
+[17:32:37] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[17:32:37] [Render thread/INFO] (FabricDataGenHelper) Running data generator for cadens-magic-mod
+[17:32:38] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:block
+[17:32:38] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:block finished after 14 ms
+[17:32:38] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Tags for minecraft:item
+[17:32:38] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Tags for minecraft:item finished after 3 ms
+[17:32:38] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Block Loot Tables
+[17:32:38] [Render thread/INFO] (Minecraft) [STDOUT]: IS_CLEAR_AND_NIGHT evaluates to: net.minecraft.loot.condition.AllOfLootCondition@188a3d00
+[17:32:38] [Render thread/INFO] (Minecraft) [STDOUT]: IS_CLEAR_AND_NIGHT evaluates to: net.minecraft.loot.condition.AllOfLootCondition@4996b2d8
+[17:32:38] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Block Loot Tables finished after 31 ms
+[17:32:38] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Model Definitions
+[17:32:38] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Model Definitions finished after 67 ms
+[17:32:38] [Render thread/INFO] (Minecraft) Starting provider: Caden's Magic Mod/Recipes
+[17:32:38] [Render thread/INFO] (Minecraft) Caden's Magic Mod/Recipes finished after 49 ms
+[17:32:38] [Render thread/INFO] (Minecraft) All providers took: 168 ms
+[17:32:38] [Render thread/INFO] (Minecraft) Caching: total files: 152, old count: 152, new count: 153, removed stale: 0, written: 6

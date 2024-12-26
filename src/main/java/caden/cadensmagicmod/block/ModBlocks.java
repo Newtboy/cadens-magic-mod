@@ -5,6 +5,7 @@ import caden.cadensmagicmod.block.custom.MagicBlock;
 import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
 import caden.cadensmagicmod.block.custom.MoonoakBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
+import caden.cadensmagicmod.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -47,7 +48,7 @@ public class ModBlocks {
             new MoonOakLeafBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
     public static final Block MOON_OAK_SAPLING = registerBlock("moon_oak_sapling",
-           new SaplingBlock( , AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+           new SaplingBlock(ModSaplingGenerators.MOON_OAK, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
