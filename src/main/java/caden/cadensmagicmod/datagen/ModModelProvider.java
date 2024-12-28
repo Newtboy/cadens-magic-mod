@@ -44,7 +44,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
-        Identifier moonOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.MOON_OAK_LOG, blockStateModelGenerator.modelCollector);
+        Identifier moonOffIdentifier = TexturedModel.CUBE_ALL.upload(Blocks.OAK_LOG, blockStateModelGenerator.modelCollector);
         Identifier moonOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LOG, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonoakBlock.MOON_VISIBLE, moonOnIdentifier, moonOffIdentifier)));

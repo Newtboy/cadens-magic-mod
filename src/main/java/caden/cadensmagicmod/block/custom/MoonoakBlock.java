@@ -2,6 +2,7 @@ package caden.cadensmagicmod.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.StateManager;
@@ -16,8 +17,6 @@ public class MoonoakBlock extends Block {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
     public static final BooleanProperty NATURAL = BooleanProperty.of("spawned");
     public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
-
-
 
     public MoonoakBlock(Settings settings) {
         super(settings);
@@ -57,4 +56,9 @@ public class MoonoakBlock extends Block {
         }
     }
 
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        // Set NATURAL to false if placed by the player
+        return this.getDefaultState().with(NATURAL, false);
+    }
 }

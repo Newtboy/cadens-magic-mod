@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "cadens-magic-mod:block/moon_oak_log_on"
+    "end": "cadens-magic-mod:block/moon_oak_log_top",
+    "side": "cadens-magic-mod:block/moon_oak_log_on"
   }
 }

@@ -46,10 +46,7 @@ public class MoonOakLeafBlock extends Block {
         }
         else if (world.getDimension().hasSkyLight()) {
             long time = world.getTimeOfDay() % 24000;
-            System.out.println("Current time: " + time);
-            boolean visible = time >= 13000 && time <= 23000;
-            System.out.println("Is moon visible? " + visible);
-            return visible;
+            return time >= 13000 && time <= 23000;
         }
         return false;
     }
