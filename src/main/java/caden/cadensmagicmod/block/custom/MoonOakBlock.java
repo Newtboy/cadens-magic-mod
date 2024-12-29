@@ -2,23 +2,25 @@ package caden.cadensmagicmod.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class MoonoakBlock extends Block {
+public class MoonOakBlock extends PillarBlock {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
     public static final BooleanProperty NATURAL = BooleanProperty.of("spawned");
     public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
 
-    public MoonoakBlock(Settings settings) {
+    public MoonOakBlock(Settings settings) {
         super(settings);
         setDefaultState(this.getDefaultState().with(MOON_VISIBLE, false));
     }

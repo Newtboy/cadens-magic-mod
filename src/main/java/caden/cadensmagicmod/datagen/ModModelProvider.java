@@ -1,8 +1,8 @@
 package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
+import caden.cadensmagicmod.block.custom.MoonOakBlock;
 import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
-import caden.cadensmagicmod.block.custom.MoonoakBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -45,8 +45,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         final Identifier moonOffVerticalIdentifier = Models.CUBE_COLUMN.upload(
-                ModBlocks.MOON_OAK_LOG,
-                TextureMap.sideAndEndForTop(ModBlocks.MOON_OAK_LOG),
+                Blocks.OAK_LOG,
+                TextureMap.sideAndEndForTop(Blocks.OAK_LOG),
                 blockStateModelGenerator.modelCollector);
 
         final Identifier moonOffHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
@@ -75,9 +75,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector
                 .accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
                         .coordinate(BlockStateVariantMap.TripleProperty.create(
-                                MoonoakBlock.AXIS,
-                                MoonoakBlock.MOON_VISIBLE,
-                                MoonoakBlock.NATURAL)
+                                MoonOakBlock.AXIS,
+                                MoonOakBlock.MOON_VISIBLE,
+                                MoonOakBlock.NATURAL)
                                 .register((axis, moonVisible, natural) -> {
                                     Identifier horizontalIdentifier = moonVisible ? moonOnHorizontalIdentifier : moonOffHorizontalIdentifier;
                                     Identifier verticalIdentifier = moonVisible ? moonOnVerticalIdentifier : moonOffVerticalIdentifier;

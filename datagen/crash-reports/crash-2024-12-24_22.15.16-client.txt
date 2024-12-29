@@ -48,7 +48,7 @@ Caused by: java.lang.IllegalArgumentException: Cannot get property EnumProperty{
 	at knot//net.minecraft.state.StateManager.<init>(StateManager.java:57)
 	at knot//net.minecraft.state.StateManager$Builder.build(StateManager.java:155)
 	at knot//net.minecraft.block.Block.<init>(Block.java:269)
-	at knot//caden.cadensmagicmod.block.custom.MoonoakBlock.<init>(MoonoakBlock.java:17)
+	at knot//caden.cadensmagicmod.block.custom.MoonOakBlock.<init>(MoonoakBlock.java:17)
 	at knot//caden.cadensmagicmod.block.ModBlocks.<clinit>(ModBlocks.java:36)
 	... 11 more
 
