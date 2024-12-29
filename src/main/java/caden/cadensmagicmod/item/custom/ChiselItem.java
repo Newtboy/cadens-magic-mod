@@ -20,6 +20,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class ChiselItem extends Item {
 
@@ -45,7 +46,7 @@ public class ChiselItem extends Item {
                 world.setBlockState(context.getBlockPos(), CHISEL_MAP.get(clickedBlock).getDefaultState());
 
                 context.getStack().damage(1, ((ServerWorld) world), (ServerPlayerEntity) context.getPlayer(),
-                        item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+                        item -> Objects.requireNonNull(context.getPlayer()).sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
 

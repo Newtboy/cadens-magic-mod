@@ -19,6 +19,8 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
+    //Everything pink garnet is from a tutorial
+
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.BAMBOO).sounds(BlockSoundGroup.AZALEA_LEAVES)));
