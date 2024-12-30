@@ -19,8 +19,10 @@
       "state": {
         "Name": "cadens-magic-mod:moon_oak_leaves",
         "Properties": {
-          "moon_visible": "false",
-          "spawned": "true"
+          "distance": "7",
+          "persistent": "false",
+          "spawned": "true",
+          "waterlogged": "false"
         }
       }
     },
@@ -43,8 +45,7 @@
       "state": {
         "Name": "cadens-magic-mod:moon_oak_log",
         "Properties": {
-          "axis": "x",
-          "moon_visible": "false",
+          "axis": "y",
           "spawned": "true"
         }
       }
