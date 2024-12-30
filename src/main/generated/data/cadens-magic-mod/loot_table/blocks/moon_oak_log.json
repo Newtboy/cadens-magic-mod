@@ -5,13 +5,65 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:survives_explosion"
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "acceptable_weather": [
+                "CLEAR"
+              ],
+              "condition": "cadens-magic-mod:weather"
+            },
+            {
+              "condition": "minecraft:time_check",
+              "period": 24000,
+              "value": {
+                "max": 23000.0,
+                "min": 13000.0
+              }
+            }
+          ]
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "cadens-magic-mod:moon_oak_log"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "cadens-magic-mod:none_of",
+          "terms": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "acceptable_weather": [
+                    "CLEAR"
+                  ],
+                  "condition": "cadens-magic-mod:weather"
+                },
+                {
+                  "condition": "minecraft:time_check",
+                  "period": 24000,
+                  "value": {
+                    "max": 23000.0,
+                    "min": 13000.0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_log"
         }
       ],
       "rolls": 1.0

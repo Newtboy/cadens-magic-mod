@@ -1,13 +1,10 @@
 package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
-import caden.cadensmagicmod.block.custom.MoonOakBlock;
-import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
@@ -44,65 +41,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
-        final Identifier moonOffVerticalIdentifier = Models.CUBE_COLUMN.upload(
-                Blocks.OAK_LOG,
-                TextureMap.sideAndEndForTop(Blocks.OAK_LOG),
-                blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.registerLog(ModBlocks.MOON_OAK_LOG).log(ModBlocks.MOON_OAK_LOG);
 
-        final Identifier moonOffHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
-                ModBlocks.MOON_OAK_LOG,
-                TextureMap.sideAndEndForTop(ModBlocks.MOON_OAK_LOG),
-                blockStateModelGenerator.modelCollector);
-
-        final Identifier moonOnVerticalIdentifier = Models.CUBE_COLUMN.upload(
-                ModBlocks.MOON_OAK_LOG,
-                "_on",
-                new TextureMap()
-                        .put(TextureKey.SIDE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on"))
-                        .put(TextureKey.END, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_top_on"))
-                        .put(TextureKey.PARTICLE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on")),
-                blockStateModelGenerator.modelCollector);
-
-        final Identifier moonOnHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
-                ModBlocks.MOON_OAK_LOG,
-                "_on",
-                new TextureMap()
-                        .put(TextureKey.SIDE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on"))
-                        .put(TextureKey.END, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_top_on"))
-                        .put(TextureKey.PARTICLE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on")),
-                blockStateModelGenerator.modelCollector);
-
-        blockStateModelGenerator.blockStateCollector
-                .accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
-                        .coordinate(BlockStateVariantMap.TripleProperty.create(
-                                MoonOakBlock.AXIS,
-                                MoonOakBlock.MOON_VISIBLE,
-                                MoonOakBlock.NATURAL)
-                                .register((axis, moonVisible, natural) -> {
-                                    Identifier horizontalIdentifier = moonVisible ? moonOnHorizontalIdentifier : moonOffHorizontalIdentifier;
-                                    Identifier verticalIdentifier = moonVisible ? moonOnVerticalIdentifier : moonOffVerticalIdentifier;
-
-                                    return switch (axis) {
-                                        case Y -> BlockStateVariant.create()
-                                                .put(VariantSettings.MODEL, verticalIdentifier);
-                                        case Z -> BlockStateVariant.create()
-                                                .put(VariantSettings.MODEL, horizontalIdentifier)
-                                                .put(VariantSettings.X, VariantSettings.Rotation.R90);
-                                        case X -> BlockStateVariant.create()
-                                                .put(VariantSettings.MODEL, horizontalIdentifier)
-                                                .put(VariantSettings.X, VariantSettings.Rotation.R90)
-                                                .put(VariantSettings.Y, VariantSettings.Rotation.R90);
-                                    };
-                                })));
-
-
-        Identifier moonLeafOffIdentifier = TexturedModel.CUBE_ALL.upload(Blocks.OAK_LEAVES, blockStateModelGenerator.modelCollector);
-        Identifier moonLeafOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LEAVES)
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonOakLeafBlock.MOON_VISIBLE, moonLeafOnIdentifier, moonLeafOffIdentifier)));
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_LEAVES);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_PLANKS);
-//        blockStateModelGenerator.registerSingleton(ModBlocks.MOON_OAK_LEAVES, TexturedModel.LEAVES);
+
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOON_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
