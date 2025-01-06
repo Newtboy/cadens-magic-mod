@@ -7,19 +7,15 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.EnumProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class MoonOakBlock extends PillarBlock {
+public class MoonOakLog extends PillarBlock {
     public static final BooleanProperty MOON_VISIBLE = BooleanProperty.of("moon_visible");
-    public static final BooleanProperty NATURAL = BooleanProperty.of("spawned");
+    public static final BooleanProperty NATURAL = BooleanProperty.of("natural");
 
-    public MoonOakBlock(Settings settings) {
+    public MoonOakLog(Settings settings) {
         super(settings);
         setDefaultState(this.getDefaultState().with(MOON_VISIBLE, false));
         setDefaultState(super.getDefaultState().with(NATURAL, true));

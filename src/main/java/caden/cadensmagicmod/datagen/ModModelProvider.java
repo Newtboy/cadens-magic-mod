@@ -1,14 +1,18 @@
 package caden.cadensmagicmod.datagen;
 
 import caden.cadensmagicmod.block.ModBlocks;
+import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
+import caden.cadensmagicmod.block.custom.MoonOakLog;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
+    
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -16,7 +20,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //make a variable that allows for the fences, stairs, etc. to use this block's texture
         BlockStateModelGenerator.BlockTexturePool pinkGarnetPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_GARNET_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
@@ -36,14 +42,65 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
 
-        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.PINK_GARNET_LAMP, blockStateModelGenerator.modelCollector);
-        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+        final Identifier moonOffHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
+                ModBlocks.MOON_OAK_LOG,
+                TextureMap.sideAndEndForTop(ModBlocks.MOON_OAK_LOG),
+                blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.registerLog(ModBlocks.MOON_OAK_LOG).log(ModBlocks.MOON_OAK_LOG);
+        final Identifier moonOnVerticalIdentifier = Models.CUBE_COLUMN.upload(
+                ModBlocks.MOON_OAK_LOG,
+                "_on",
+                new TextureMap()
+                        .put(TextureKey.SIDE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on"))
+                        .put(TextureKey.END, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_top_on"))
+                        .put(TextureKey.PARTICLE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on")),
+                blockStateModelGenerator.modelCollector);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_LEAVES);
+        final Identifier moonOnHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
+                ModBlocks.MOON_OAK_LOG,
+                "_on",
+                new TextureMap()
+                        .put(TextureKey.SIDE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on"))
+                        .put(TextureKey.END, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_top_on"))
+                        .put(TextureKey.PARTICLE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on")),
+                blockStateModelGenerator.modelCollector);
+
+        final Identifier moonOffVerticalIdentifier = Models.CUBE_COLUMN.upload(
+                Blocks.OAK_LOG,
+                TextureMap.sideAndEndForTop(Blocks.OAK_LOG),
+                blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector
+                .accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LOG)
+                        .coordinate(BlockStateVariantMap.TripleProperty.create(
+                                        MoonOakLog.AXIS,
+                                        MoonOakLog.MOON_VISIBLE,
+                                        MoonOakLog.NATURAL)
+                                .register((axis, moonVisible, natural) -> {
+                                    // Always use moonOn models if NATURAL is false
+                                    boolean useMoonOn = !natural || moonVisible;
+
+                                    Identifier horizontalIdentifier = useMoonOn ? moonOnHorizontalIdentifier : moonOffHorizontalIdentifier;
+                                    Identifier verticalIdentifier = useMoonOn ? moonOnVerticalIdentifier : moonOffVerticalIdentifier;
+
+                                    return switch (axis) {
+                                        case Y -> BlockStateVariant.create()
+                                                .put(VariantSettings.MODEL, verticalIdentifier);
+                                        case Z -> BlockStateVariant.create()
+                                                .put(VariantSettings.MODEL, horizontalIdentifier)
+                                                .put(VariantSettings.X, VariantSettings.Rotation.R90);
+                                        case X -> BlockStateVariant.create()
+                                                .put(VariantSettings.MODEL, horizontalIdentifier)
+                                                .put(VariantSettings.X, VariantSettings.Rotation.R90)
+                                                .put(VariantSettings.Y, VariantSettings.Rotation.R90);
+                                    };
+                                })));
+
+        Identifier moonLeafOffIdentifier = TexturedModel.CUBE_ALL.upload(Blocks.OAK_LEAVES, blockStateModelGenerator.modelCollector);
+        Identifier moonLeafOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
+
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LEAVES)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonOakLeafBlock.MOON_VISIBLE, moonLeafOnIdentifier, moonLeafOffIdentifier)));
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_PLANKS);
 

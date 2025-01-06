@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "cadens-magic-mod:block/pink_garnet_lamp_on"
+    "all": "cadens-magic-mod:block/moon_oak_leaves_on"
   }
 }

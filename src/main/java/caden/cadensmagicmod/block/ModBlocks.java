@@ -2,7 +2,7 @@ package caden.cadensmagicmod.block;
 
 import caden.cadensmagicmod.CadensMagicMod;
 import caden.cadensmagicmod.block.custom.MagicBlock;
-import caden.cadensmagicmod.block.custom.MoonOakBlock;
+import caden.cadensmagicmod.block.custom.MoonOakLog;
 import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
 import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.world.tree.ModSaplingGenerators;
@@ -36,7 +36,7 @@ public class ModBlocks {
 
 
     public static final Block MOON_OAK_LOG = registerBlock("moon_oak_log",
-            new MoonOakBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+            new MoonOakLog(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_MOON_OAK_LOG = registerBlock("stripped_moon_oak_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final Block MOON_OAK_WOOD = registerBlock("moon_oak_wood",
@@ -45,7 +45,7 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
 
     public static final Block MOON_OAK_PLANKS = registerBlock("moon_oak_planks",
-            new MoonOakBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new MoonOakLog(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block MOON_OAK_LEAVES = registerBlock("moon_oak_leaves",
             new MoonOakLeafBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
