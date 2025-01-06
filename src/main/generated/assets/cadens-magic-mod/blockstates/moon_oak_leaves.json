@@ -1,9 +1,15 @@
 {
   "variants": {
-    "moon_visible=false": {
+    "moon_visible=false,spawned=false": {
+      "model": "cadens-magic-mod:block/moon_oak_leaves_on"
+    },
+    "moon_visible=false,spawned=true": {
       "model": "minecraft:block/oak_leaves"
     },
-    "moon_visible=true": {
+    "moon_visible=true,spawned=false": {
+      "model": "cadens-magic-mod:block/moon_oak_leaves_on"
+    },
+    "moon_visible=true,spawned=true": {
       "model": "cadens-magic-mod:block/moon_oak_leaves_on"
     }
   }

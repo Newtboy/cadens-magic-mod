@@ -45,7 +45,7 @@
         "Properties": {
           "axis": "y",
           "moon_visible": "false",
-          "spawned": "true"
+          "natural": "true"
         }
       }
     }

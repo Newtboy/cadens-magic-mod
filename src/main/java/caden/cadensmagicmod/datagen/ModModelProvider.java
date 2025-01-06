@@ -42,12 +42,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
 
-        final Identifier moonOffHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
-                ModBlocks.MOON_OAK_LOG,
-                TextureMap.sideAndEndForTop(ModBlocks.MOON_OAK_LOG),
-                blockStateModelGenerator.modelCollector);
-
-        final Identifier moonOnVerticalIdentifier = Models.CUBE_COLUMN.upload(
+        final Identifier moonOakLogIdentifier = Models.CUBE_COLUMN.upload(
                 ModBlocks.MOON_OAK_LOG,
                 "_on",
                 new TextureMap()
@@ -56,18 +51,13 @@ public class ModModelProvider extends FabricModelProvider {
                         .put(TextureKey.PARTICLE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on")),
                 blockStateModelGenerator.modelCollector);
 
-        final Identifier moonOnHorizontalIdentifier = Models.CUBE_COLUMN_HORIZONTAL.upload(
+        Models.CUBE_COLUMN_HORIZONTAL.upload(
                 ModBlocks.MOON_OAK_LOG,
                 "_on",
                 new TextureMap()
                         .put(TextureKey.SIDE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on"))
                         .put(TextureKey.END, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_top_on"))
                         .put(TextureKey.PARTICLE, TextureMap.getSubId(ModBlocks.MOON_OAK_LOG, "_on")),
-                blockStateModelGenerator.modelCollector);
-
-        final Identifier moonOffVerticalIdentifier = Models.CUBE_COLUMN.upload(
-                Blocks.OAK_LOG,
-                TextureMap.sideAndEndForTop(Blocks.OAK_LOG),
                 blockStateModelGenerator.modelCollector);
 
         blockStateModelGenerator.blockStateCollector
@@ -80,8 +70,8 @@ public class ModModelProvider extends FabricModelProvider {
                                     // Always use moonOn models if NATURAL is false
                                     boolean useMoonOn = !natural || moonVisible;
 
-                                    Identifier horizontalIdentifier = useMoonOn ? moonOnHorizontalIdentifier : moonOffHorizontalIdentifier;
-                                    Identifier verticalIdentifier = useMoonOn ? moonOnVerticalIdentifier : moonOffVerticalIdentifier;
+                                    Identifier horizontalIdentifier = useMoonOn ? moonOakLogIdentifier.withSuffixedPath("_horizontal") : ModelIds.getBlockSubModelId(Blocks.OAK_LOG, "_horizontal");
+                                    Identifier verticalIdentifier = useMoonOn ? moonOakLogIdentifier : ModelIds.getBlockModelId(Blocks.OAK_LOG);
 
                                     return switch (axis) {
                                         case Y -> BlockStateVariant.create()
@@ -96,11 +86,23 @@ public class ModModelProvider extends FabricModelProvider {
                                     };
                                 })));
 
-        Identifier moonLeafOffIdentifier = TexturedModel.CUBE_ALL.upload(Blocks.OAK_LEAVES, blockStateModelGenerator.modelCollector);
-        Identifier moonLeafOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
+        Identifier moonLeafIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
 
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LEAVES)
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(MoonOakLeafBlock.MOON_VISIBLE, moonLeafOnIdentifier, moonLeafOffIdentifier)));
+        blockStateModelGenerator.blockStateCollector
+                        .accept(VariantsBlockStateSupplier.create(ModBlocks.MOON_OAK_LEAVES)
+                                .coordinate(BlockStateVariantMap.DoubleProperty.create(
+                                        MoonOakLeafBlock.MOON_VISIBLE,
+                                        MoonOakLeafBlock.NATURAL)
+                                        .register((moonVisible, natural) -> {
+                                            // Always use moonOn models if NATURAL is false
+                                            boolean useMoonOn = !natural || moonVisible;
+
+                                            Identifier identifier = useMoonOn ? moonLeafIdentifier : ModelIds.getBlockModelId(Blocks.OAK_LEAVES);
+
+                                            return BlockStateVariant.create()
+                                                    .put(VariantSettings.MODEL, identifier);
+                                        })));
+
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_PLANKS);
 
