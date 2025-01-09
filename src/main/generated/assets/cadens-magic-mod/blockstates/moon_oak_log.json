@@ -1,50 +1,50 @@
 {
   "variants": {
-    "axis=x,moon_visible=false,spawned=false": {
+    "axis=x,moon_visible=false,natural=false": {
       "model": "cadens-magic-mod:block/moon_oak_log_on_horizontal",
       "x": 90,
       "y": 90
     },
-    "axis=x,moon_visible=false,spawned=true": {
-      "model": "cadens-magic-mod:block/moon_oak_log_horizontal",
+    "axis=x,moon_visible=false,natural=true": {
+      "model": "minecraft:block/oak_log_horizontal",
       "x": 90,
       "y": 90
     },
-    "axis=x,moon_visible=true,spawned=false": {
+    "axis=x,moon_visible=true,natural=false": {
       "model": "cadens-magic-mod:block/moon_oak_log_on_horizontal",
       "x": 90,
       "y": 90
     },
-    "axis=x,moon_visible=true,spawned=true": {
+    "axis=x,moon_visible=true,natural=true": {
       "model": "cadens-magic-mod:block/moon_oak_log_on_horizontal",
       "x": 90,
       "y": 90
     },
-    "axis=y,moon_visible=false,spawned=false": {
+    "axis=y,moon_visible=false,natural=false": {
       "model": "cadens-magic-mod:block/moon_oak_log_on"
     },
-    "axis=y,moon_visible=false,spawned=true": {
+    "axis=y,moon_visible=false,natural=true": {
       "model": "minecraft:block/oak_log"
     },
-    "axis=y,moon_visible=true,spawned=false": {
+    "axis=y,moon_visible=true,natural=false": {
       "model": "cadens-magic-mod:block/moon_oak_log_on"
     },
-    "axis=y,moon_visible=true,spawned=true": {
+    "axis=y,moon_visible=true,natural=true": {
       "model": "cadens-magic-mod:block/moon_oak_log_on"
     },
-    "axis=z,moon_visible=false,spawned=false": {
+    "axis=z,moon_visible=false,natural=false": {
       "model": "cadens-magic-mod:block/moon_oak_log_on_horizontal",
       "x": 90
     },
-    "axis=z,moon_visible=false,spawned=true": {
-      "model": "cadens-magic-mod:block/moon_oak_log_horizontal",
+    "axis=z,moon_visible=false,natural=true": {
+      "model": "minecraft:block/oak_log_horizontal",
       "x": 90
     },
-    "axis=z,moon_visible=true,spawned=false": {
+    "axis=z,moon_visible=true,natural=false": {
       "model": "cadens-magic-mod:block/moon_oak_log_on_horizontal",
       "x": 90
     },
-    "axis=z,moon_visible=true,spawned=true": {
+    "axis=z,moon_visible=true,natural=true": {
       "model": "cadens-magic-mod:block/moon_oak_log_on_horizontal",
       "x": 90
     }

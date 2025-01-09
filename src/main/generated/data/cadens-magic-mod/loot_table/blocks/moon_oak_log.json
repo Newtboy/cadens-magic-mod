@@ -22,6 +22,10 @@
               }
             }
           ]
+        },
+        {
+          "condition": "cadens-magic-mod:natural",
+          "natural": false
         }
       ],
       "entries": [
