@@ -3,7 +3,6 @@ package caden.cadensmagicmod.datagen;
 import caden.cadensmagicmod.block.ModBlocks;
 import caden.cadensmagicmod.block.custom.MoonOakLeafBlock;
 import caden.cadensmagicmod.block.custom.MoonOakLog;
-import caden.cadensmagicmod.block.custom.PinkGarnetLampBlock;
 import caden.cadensmagicmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -126,5 +125,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
+
+//        itemModelGenerator.register(ModBlocks.MOON_OAK_LOG.asItem(), Models.CUBE); DOESN'T WORK, "CAN'T FIND TEXTURE FOR SLOT #particle"
     }
 }

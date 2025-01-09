@@ -27,10 +27,5 @@ public class ModLootConditionTypes {
                 Identifier.of("cadens-magic-mod", "none_of"),
                 NONE_OF
         );
-        Registry.register(
-                Registries.LOOT_CONDITION_TYPE,
-                Identifier.of("cadens-magic-mod", "natural"),
-                NATURAL
-        );
     }
 }

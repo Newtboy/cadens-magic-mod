@@ -43,9 +43,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                     .and(() -> new TimeCheckLootCondition(Optional.of(24000L), BoundedIntUnaryOperator.create(13000, 23000))) // Nighttime in ticks
                     .build();
 
-    static LootCondition IS_NOT_NATURAL =
-            new NaturalCheckLootCondition()
-
     @Override
     public void generate() {
         addDrop(ModBlocks.PINK_GARNET_BLOCK); // for it to drop itself
@@ -75,7 +72,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                         LootPool.builder()
                                 .rolls(ConstantLootNumberProvider.create(1))
                                 .conditionally(IS_CLEAR_AND_NIGHT) // Use the pre-defined condition
-                                .conditionally(IS_NOT_NATURAL)
                                 .with(ItemEntry.builder(MOON_OAK_LOG)) // Drops MOON_OAK_LOG when the condition is met
                 ).pool(
                         LootPool.builder()
@@ -83,6 +79,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .conditionally(new NoneOfLootCondition(IS_CLEAR_AND_NIGHT)) // Use NoneOfLootCondition directly
                                 .with(ItemEntry.builder(Items.OAK_LOG)) // Drops OAK_LOG when the condition is NOT met
                 ));
+
         addDrop(MOON_OAK_LEAVES, LootTable.builder()
                 .pool(
                         LootPool.builder()

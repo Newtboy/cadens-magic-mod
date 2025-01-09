@@ -1,9 +1,9 @@
-// 1.21	2025-01-06T08:27:21.5164881	Caden's Magic Mod/Tags for minecraft:item
-0dae09962c01da706b8261e20e0c2e8d47cd1bdb data\minecraft\tags\item\planks.json
-97c9460c88cb4c48b0cbff5f2184d3212fc1eeb4 data\cadens-magic-mod\tags\item\transformable_items.json
-7670aa7c5b9845c2bb1be946d46afd5bd266f6c4 data\minecraft\tags\item\axes.json
-da8a259c2857efe4f6be3a52d887aa71d97e0e4a data\minecraft\tags\item\swords.json
-096b225d7664b77e6a85d3d03d86ef994e0663be data\minecraft\tags\item\shovels.json
-e7caa4cda42973cc4093f7443648e520447c66c3 data\minecraft\tags\item\pickaxes.json
-2d103aeebc7d8e43c748829d73bdb99f425f3a32 data\minecraft\tags\item\logs_that_burn.json
-551bc4a549060905acd7bfd005f9086cba397b5d data\minecraft\tags\item\hoes.json
+// 1.21	2025-01-09T16:33:50.848887	Caden's Magic Mod/Tags for minecraft:item
+0dae09962c01da706b8261e20e0c2e8d47cd1bdb data/minecraft/tags/item/planks.json
+e7caa4cda42973cc4093f7443648e520447c66c3 data/minecraft/tags/item/pickaxes.json
+7670aa7c5b9845c2bb1be946d46afd5bd266f6c4 data/minecraft/tags/item/axes.json
+97c9460c88cb4c48b0cbff5f2184d3212fc1eeb4 data/cadens-magic-mod/tags/item/transformable_items.json
+096b225d7664b77e6a85d3d03d86ef994e0663be data/minecraft/tags/item/shovels.json
+2d103aeebc7d8e43c748829d73bdb99f425f3a32 data/minecraft/tags/item/logs_that_burn.json
+da8a259c2857efe4f6be3a52d887aa71d97e0e4a data/minecraft/tags/item/swords.json
+551bc4a549060905acd7bfd005f9086cba397b5d data/minecraft/tags/item/hoes.json
