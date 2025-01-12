@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cadens-magic-mod:moon_oak_planks"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "cadens-magic-mod:moon_oak_button"
+  }
+}

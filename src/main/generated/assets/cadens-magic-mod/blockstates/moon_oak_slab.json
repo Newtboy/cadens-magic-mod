@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cadens-magic-mod:block/moon_oak_slab"
+    },
+    "type=double": {
+      "model": "cadens-magic-mod:block/moon_oak_planks"
+    },
+    "type=top": {
+      "model": "cadens-magic-mod:block/moon_oak_slab_top"
+    }
+  }
+}

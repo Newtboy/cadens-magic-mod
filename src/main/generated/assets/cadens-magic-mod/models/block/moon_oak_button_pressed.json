@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "cadens-magic-mod:block/moon_oak_planks"
+  }
+}

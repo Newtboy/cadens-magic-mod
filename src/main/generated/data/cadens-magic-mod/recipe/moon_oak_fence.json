@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "cadens-magic-mod:moon_oak_planks"
+    },
+    "S": {
+      "item": "cadens-magic-mod:moon_oak_stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "OSO",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "cadens-magic-mod:moon_oak_fence"
+  }
+}

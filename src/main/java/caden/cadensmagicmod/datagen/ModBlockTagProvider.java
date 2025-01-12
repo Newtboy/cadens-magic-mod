@@ -27,15 +27,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
 
-        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.PINK_GARNET_FENCE)
+                .add(ModBlocks.MOON_OAK_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PINK_GARNET_FENCE_GATE)
+                .add(ModBlocks.MOON_OAK_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PINK_GARNET_WALL);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
-        getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.MOON_OAK_LEAVES);
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.MOON_OAK_LEAVES);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MOON_OAK_LOG)
                 .add(ModBlocks.MOON_OAK_WOOD)

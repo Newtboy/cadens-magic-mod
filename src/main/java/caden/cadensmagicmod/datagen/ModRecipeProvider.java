@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -35,7 +36,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)// idfk man figure it out later
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
                 .pattern("RRR")
@@ -53,6 +54,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.RAW_PINK_GARNET_BLOCK))
                 .offerTo(exporter, Identifier.of(CadensMagicMod.MOD_ID, "raw_pink_garnet_from_magic_block")); // custom tag to have different name
 
-        
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOON_OAK_FENCE, 6)// idfk man figure it out later
+                .pattern("   ")
+                .pattern("OSO")
+                .pattern("   ")
+                .input('S', ModItems.MOON_OAK_STICK)
+                .input('O', ModBlocks.MOON_OAK_PLANKS)
+                .criterion(hasItem(ModItems.MOON_OAK_STICK), conditionsFromItem(ModItems.MOON_OAK_STICK)) // Recipe given when
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOON_OAK_FENCE_GATE, 3)// idfk man figure it out later
+                .pattern("   ")
+                .pattern("SOS")
+                .pattern("   ")
+                .input('S', Items.STICK)
+                .input('O', ModBlocks.MOON_OAK_PLANKS)
+                .criterion(hasItem(ModItems.MOON_OAK_STICK), conditionsFromItem(ModItems.MOON_OAK_STICK)) // Recipe given when
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOON_OAK_STAIRS, 6)// idfk man figure it out later
+                .pattern("O  ")
+                .pattern("OO ")
+                .pattern("OOO")
+                .input('O', ModBlocks.MOON_OAK_PLANKS)
+                .criterion(hasItem(ModBlocks.MOON_OAK_PLANKS), conditionsFromItem(ModBlocks.MOON_OAK_PLANKS)) // Recipe given when
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MOON_OAK_BUTTON, 9)
+                .input(ModBlocks.MOON_OAK_PLANKS)
+                .criterion(hasItem(ModBlocks.MOON_OAK_PLANKS), conditionsFromItem(ModBlocks.MOON_OAK_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MOON_OAK_STICK, 4)// idfk man figure it out later
+                .pattern("O")
+                .pattern("O")
+                .input('O', ModBlocks.MOON_OAK_PLANKS)
+                .criterion(hasItem(ModBlocks.MOON_OAK_PLANKS), conditionsFromItem(ModBlocks.MOON_OAK_PLANKS)) // Recipe given when
+                .offerTo(exporter);
     }
 }

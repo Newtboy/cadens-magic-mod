@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "cadens-magic-mod:block/moon_oak_planks"
+  }
+}

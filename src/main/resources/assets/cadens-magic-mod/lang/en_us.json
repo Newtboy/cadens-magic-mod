@@ -28,12 +28,22 @@
   "block.cadens-magic-mod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
 
   "block.cadens-magic-mod.moon_oak_log": "Moon Oak Log",
-  "block.cadens-magic-mod.moon_oak_plank": "Moon Oak Plank",
+  "block.cadens-magic-mod.moon_oak_planks": "Moon Oak Planks",
   "block.cadens-magic-mod.stripped_moon_oak_log": "Stripped Moon Oak Log",
   "block.cadens-magic-mod.moon_oak_sapling": "Moon Oak Sapling",
   "block.cadens-magic-mod.moon_oak_wood": "Moon Oak Wood",
   "block.cadens-magic-mod.stripped_moon_oak_wood": "Stripped Moon Oak Wood",
   "block.cadens-magic-mod.moon_oak_leaves": "Moon Oak Leaves",
+  "block.cadens-magic-mod.moon_oak_pressure_plate": "Moon Oak Pressure Plate",
+  "block.cadens-magic-mod.moon_oak_button": "Moon Oak Button",
+  "block.cadens-magic-mod.moon_oak_stairs": "Moon Oak Stairs",
+  "block.cadens-magic-mod.moon_oak_slab": "Moon Oak Slab",
+  "block.cadens-magic-mod.moon_oak_fence": "Moon Oak Fence",
+  "block.cadens-magic-mod.moon_oak_fence_gate": "Moon Oak Fence Gate",
+  "block.cadens-magic-mod.moon_oak_door": "Moon Oak Door",
+  "block.cadens-magic-mod.moon_oak_trapdoor": "Moon Oak Trapdoor",
+
+  "item.cadens-magic-mod.moon_oak_stick": "Moon Oak Stick",
 
   "block.cadens-magic-mod.pink_garnet_fence": "Pink Garnet Fence",
   "block.cadens-magic-mod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",

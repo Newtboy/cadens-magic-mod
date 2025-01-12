@@ -43,9 +43,27 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
     public static final Block STRIPPED_MOON_OAK_WOOD = registerBlock("stripped_moon_oak_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-
     public static final Block MOON_OAK_PLANKS = registerBlock("moon_oak_planks",
             new MoonOakLog(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block MOON_OAK_PRESSURE_PLATE = registerBlock("moon_oak_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOON_OAK_BUTTON = registerBlock("moon_oak_button",
+            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+    public static final Block MOON_OAK_STAIRS = registerBlock("moon_oak_stairs",
+            new StairsBlock(ModBlocks.MOON_OAK_LOG.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MOON_OAK_SLAB = registerBlock("moon_oak_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MOON_OAK_FENCE = registerBlock("moon_oak_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MOON_OAK_FENCE_GATE = registerBlock("moon_oak_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().strength(2f).requiresTool()));
+    public static final Block MOON_OAK_DOOR = registerBlock("moon_oak_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+    public static final Block MOON_OAK_TRAPDOOR = registerBlock("moon_oak_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+
     public static final Block MOON_OAK_LEAVES = registerBlock("moon_oak_leaves",
             new MoonOakLeafBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 

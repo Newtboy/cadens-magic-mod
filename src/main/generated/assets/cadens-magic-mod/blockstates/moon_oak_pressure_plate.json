@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "cadens-magic-mod:block/moon_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "cadens-magic-mod:block/moon_oak_pressure_plate_down"
+    }
+  }
+}

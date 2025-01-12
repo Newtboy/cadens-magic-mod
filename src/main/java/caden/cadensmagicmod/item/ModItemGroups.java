@@ -74,6 +74,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_MOON_OAK_LOG);
                         entries.add(ModBlocks.STRIPPED_MOON_OAK_WOOD);
                         entries.add(ModBlocks.MOON_OAK_SAPLING);
+                        entries.add(ModBlocks.MOON_OAK_BUTTON);
+                        entries.add(ModBlocks.MOON_OAK_DOOR);
+                        entries.add(ModBlocks.MOON_OAK_FENCE);
+                        entries.add(ModBlocks.MOON_OAK_FENCE_GATE);
+                        entries.add(ModBlocks.MOON_OAK_PRESSURE_PLATE);
+                        entries.add(ModBlocks.MOON_OAK_SLAB);
+                        entries.add(ModBlocks.MOON_OAK_TRAPDOOR);
+                        entries.add(ModBlocks.MOON_OAK_STAIRS);
                     }).build());
 
     public static void registerItemGroups() {

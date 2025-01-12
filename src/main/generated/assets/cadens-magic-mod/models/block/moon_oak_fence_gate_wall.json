@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall",
+  "textures": {
+    "texture": "cadens-magic-mod:block/moon_oak_planks"
+  }
+}

@@ -10,6 +10,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 
+import java.util.Optional;
+
 public class ModModelProvider extends FabricModelProvider {
     
 
@@ -21,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //make a variable that allows for the fences, stairs, etc. to use this block's texture
         BlockStateModelGenerator.BlockTexturePool pinkGarnetPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_GARNET_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool moonOakPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOON_OAK_PLANKS);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
@@ -40,6 +43,20 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        moonOakPool.stairs(ModBlocks.MOON_OAK_STAIRS);
+        moonOakPool.slab(ModBlocks.MOON_OAK_SLAB);
+
+        moonOakPool.button(ModBlocks.MOON_OAK_BUTTON);
+        moonOakPool.pressurePlate(ModBlocks.MOON_OAK_PRESSURE_PLATE);
+
+        moonOakPool.fence(ModBlocks.MOON_OAK_FENCE);
+        moonOakPool.fenceGate(ModBlocks.MOON_OAK_FENCE_GATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOON_OAK_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOON_OAK_TRAPDOOR);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_MOON_OAK_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_WOOD);
 
         final Identifier moonOakLogIdentifier = Models.CUBE_COLUMN.upload(
                 ModBlocks.MOON_OAK_LOG,
@@ -85,6 +102,7 @@ public class ModModelProvider extends FabricModelProvider {
                                     };
                                 })));
 
+
         Identifier moonLeafIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MOON_OAK_LEAVES, "_on", Models.CUBE_ALL, TextureMap::all);
 
         blockStateModelGenerator.blockStateCollector
@@ -103,8 +121,6 @@ public class ModModelProvider extends FabricModelProvider {
                                         })));
 
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_PLANKS);
-
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MOON_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
@@ -120,11 +136,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.MOON_OAK_STICK, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.PINK_GARNET_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModBlocks.MOON_OAK_LOG.asItem(), new Model(Optional.of(ModelIds.getBlockSubModelId(ModBlocks.MOON_OAK_LOG,"_on")),Optional.empty()));
+        itemModelGenerator.register(ModBlocks.MOON_OAK_LEAVES.asItem(), new Model(Optional.of(ModelIds.getBlockSubModelId(ModBlocks.MOON_OAK_LEAVES,"_on")),Optional.empty()));
 
 //        itemModelGenerator.register(ModBlocks.MOON_OAK_LOG.asItem(), Models.CUBE); DOESN'T WORK, "CAN'T FIND TEXTURE FOR SLOT #particle"
     }
