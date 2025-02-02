@@ -1,0 +1,34 @@
+{
+  "uranium_fever": {
+    "sounds": [
+      {
+        "name": "cadens-magic-mod:uranium_fever",
+        "stream": true
+      }
+    ]
+  },
+  "we_want_a_rock": {
+    "sounds": [
+      {
+        "name": "cadens-magic-mod:we_want_a_rock",
+        "stream": true
+      }
+    ]
+  },
+  "ghost_riders": {
+    "sounds": [
+      {
+        "name": "cadens-magic-mod:ghost_riders",
+        "stream": true
+      }
+    ]
+  },
+  "sisyphus": {
+    "sounds": [
+      {
+        "name": "cadens-magic-mod:sisyphus",
+        "stream": true
+      }
+    ]
+  }
+}

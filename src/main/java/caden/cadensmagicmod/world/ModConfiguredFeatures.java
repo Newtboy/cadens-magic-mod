@@ -23,12 +23,12 @@ public class ModConfiguredFeatures {
         public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
             register(context, MOON_OAK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.MOON_OAK_LOG), // block to be placed as the log
-                    new StraightTrunkPlacer(5,6,3),
+                    new StraightTrunkPlacer(4,2,0), // base height, random height, bonus height
 
                     BlockStateProvider.of(ModBlocks.MOON_OAK_LEAVES), // block for leaves
-                    new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3), // How the leaves get placed
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3), // How the leaves get placed (leaf radius, height offset)
 
-                    new TwoLayersFeatureSize(1,0,2)).build()); // so they don't overlap????
+                    new TwoLayersFeatureSize(1,0,1)).build()); // (layer deep at top, offset, small tree height scaling)
         }
 
         public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

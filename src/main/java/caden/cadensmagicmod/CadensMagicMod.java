@@ -5,6 +5,7 @@ import caden.cadensmagicmod.component.ModDataComponentTypes;
 import caden.cadensmagicmod.item.ModItemGroups;
 import caden.cadensmagicmod.item.ModItems;
 import caden.cadensmagicmod.loot.ModLootConditionTypes;
+import caden.cadensmagicmod.sound.ModSounds;
 import caden.cadensmagicmod.util.HammerUsageEvent;
 import caden.cadensmagicmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -32,6 +33,8 @@ public class CadensMagicMod implements ModInitializer {
 		ModLootConditionTypes.register();
 
 		ModWorldGeneration.GenerateModWorldGen();
+
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 

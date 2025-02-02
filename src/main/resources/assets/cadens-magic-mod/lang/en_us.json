@@ -1,32 +1,4 @@
 {
-  "item.cadens-magic-mod.pink_garnet": "Pink Garnet",
-  "item.cadens-magic-mod.raw_pink_garnet": "Raw Pink Garnet",
-
-  "item.cadens-magic-mod.chisel": "Chisel",
-
-  "item.cadens-magic-mod.cauliflower": "Cauliflower",
-
-  "item.cadens-magic-mod.starlight_ashes": "Starlight Ashes",
-
-  "item.cadens-magic-mod.pink_garnet_hoe": "Pink Garnet Hoe",
-  "item.cadens-magic-mod.pink_garnet_axe": "Pink Garnet Axe",
-  "item.cadens-magic-mod.pink_garnet_shovel": "Pink Garnet Shovel",
-  "item.cadens-magic-mod.pink_garnet_sword": "Pink Garnet Sword",
-  "item.cadens-magic-mod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
-  "item.cadens-magic-mod.pink_garnet_hammer": "Pink Garnet Hammer",
-
-  "block.cadens-magic-mod.pink_garnet_block": "Block of Pink Garnet",
-  "block.cadens-magic-mod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
-
-  "block.cadens-magic-mod.pink_garnet_ore": "Pink Garnet Ore",
-  "block.cadens-magic-mod.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
-
-  "block.cadens-magic-mod.pink_garnet_stairs": "Pink Garnet Stairs",
-  "block.cadens-magic-mod.pink_garnet_slab": "Pink Garnet Slab",
-
-  "block.cadens-magic-mod.pink_garnet_button": "Pink Garnet Button",
-  "block.cadens-magic-mod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
-
   "block.cadens-magic-mod.moon_oak_log": "Moon Oak Log",
   "block.cadens-magic-mod.moon_oak_planks": "Moon Oak Planks",
   "block.cadens-magic-mod.stripped_moon_oak_log": "Stripped Moon Oak Log",
@@ -44,6 +16,18 @@
   "block.cadens-magic-mod.moon_oak_trapdoor": "Moon Oak Trapdoor",
 
   "item.cadens-magic-mod.moon_oak_stick": "Moon Oak Stick",
+
+  "item.cadens-magic-mod.uranium_fever_music_disc": "Disc 55",
+  "item.cadens-magic-mod.uranium_fever_music_disc.desc": "Elton Britt - Uranium Fever",
+
+  "item.cadens-magic-mod.we_want_a_rock_music_disc": "Disc 69",
+  "item.cadens-magic-mod.we_want_a_rock_music_disc.desc": "They Might Be Giants - We Want A Rock",
+
+  "item.cadens-magic-mod.ghost_riders_music_disc": "Disc 606",
+  "item.cadens-magic-mod.ghost_riders_music_disc.desc": "Marty Robbins - Ghost Riders In The Sky",
+
+  "item.cadens-magic-mod.sisyphus_music_disc": "Disc 27",
+  "item.cadens-magic-mod.sisyphus_music_disc.desc": "Marty Robbins - Ghost Riders In The Sky",
 
   "block.cadens-magic-mod.pink_garnet_fence": "Pink Garnet Fence",
   "block.cadens-magic-mod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",

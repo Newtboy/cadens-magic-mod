@@ -58,6 +58,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_MOON_OAK_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOON_OAK_WOOD);
 
+
+
         final Identifier moonOakLogIdentifier = Models.CUBE_COLUMN.upload(
                 ModBlocks.MOON_OAK_LOG,
                 "_on",
@@ -143,6 +145,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.URANIUM_FEVER_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WE_WANT_A_ROCK_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GHOST_RIDERS_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SISYPHUS_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModBlocks.MOON_OAK_LOG.asItem(), new Model(Optional.of(ModelIds.getBlockSubModelId(ModBlocks.MOON_OAK_LOG,"_on")),Optional.empty()));
         itemModelGenerator.register(ModBlocks.MOON_OAK_LEAVES.asItem(), new Model(Optional.of(ModelIds.getBlockSubModelId(ModBlocks.MOON_OAK_LEAVES,"_on")),Optional.empty()));

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.cadens-magic-mod.we_want_a_rock_music_disc.desc"
+  },
+  "length_in_seconds": 166.0,
+  "sound_event": "cadens-magic-mod:we_want_a_rock"
+}

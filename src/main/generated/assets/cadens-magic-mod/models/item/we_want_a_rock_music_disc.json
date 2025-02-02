@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cadens-magic-mod:item/we_want_a_rock_music_disc"
+  }
+}

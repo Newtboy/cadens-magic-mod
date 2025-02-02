@@ -1,9 +1,9 @@
-// 1.21	2025-01-11T22:45:46.185043	Caden's Magic Mod/Tags for minecraft:block
+// 1.21	2025-02-02T16:08:00.700464	Caden's Magic Mod/Tags for minecraft:block
 67df88f03062070cf90d52b0030814cf27d2f597 data/minecraft/tags/block/fence_gates.json
 a90194aca5f7923f93ac031f0803e48b976312eb data/minecraft/tags/block/leaves.json
 2d103aeebc7d8e43c748829d73bdb99f425f3a32 data/minecraft/tags/block/logs_that_burn.json
 8d1c7f7ab962d236e611bc8969b7da53fbc14edf data/cadens-magic-mod/tags/block/needs_pink_garnet_tool.json
-114a26ad901959d9382e92c0b7e0819a4b6793c4 data/minecraft/tags/block/walls.json
 6db5dc443815a90ac66290e149a2cabe81b1fa2c data/minecraft/tags/block/fences.json
+114a26ad901959d9382e92c0b7e0819a4b6793c4 data/minecraft/tags/block/walls.json
 c4a91c2229707a6133abf751dc20d5bfdc608904 data/minecraft/tags/block/needs_iron_tool.json
 d6162afd7c7c2f876d960c2ccda4a9ddab29ae16 data/minecraft/tags/block/mineable/pickaxe.json

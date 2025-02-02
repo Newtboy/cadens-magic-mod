@@ -82,6 +82,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOON_OAK_SLAB);
                         entries.add(ModBlocks.MOON_OAK_TRAPDOOR);
                         entries.add(ModBlocks.MOON_OAK_STAIRS);
+
+                        entries.add(ModItems.URANIUM_FEVER_MUSIC_DISC);
+                        entries.add(ModItems.GHOST_RIDERS_MUSIC_DISC);
+                        entries.add(ModItems.WE_WANT_A_ROCK_MUSIC_DISC);
+                        entries.add(ModItems.SISYPHUS_MUSIC_DISC);
                     }).build());
 
     public static void registerItemGroups() {

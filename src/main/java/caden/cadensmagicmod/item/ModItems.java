@@ -3,6 +3,7 @@ package caden.cadensmagicmod.item;
 import caden.cadensmagicmod.CadensMagicMod;
 import caden.cadensmagicmod.item.custom.ChiselItem;
 import caden.cadensmagicmod.item.custom.HammerItem;
+import caden.cadensmagicmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -27,6 +28,15 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+
+    public static final Item URANIUM_FEVER_MUSIC_DISC = registerItem("uranium_fever_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.URANIUM_FEVER_KEY).maxCount(1)));
+    public static final Item WE_WANT_A_ROCK_MUSIC_DISC = registerItem("we_want_a_rock_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.WE_WANT_A_ROCK_KEY).maxCount(1)));
+    public static final Item GHOST_RIDERS_MUSIC_DISC = registerItem("ghost_riders_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.GHOST_RIDERS_KEY).maxCount(1)));
+    public static final Item SISYPHUS_MUSIC_DISC = registerItem("sisyphus_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.SISYPHUS_KEY).maxCount(1)));
 
     public static final Item MOON_OAK_STICK = registerItem("moon_oak_stick", new Item(new Item.Settings()));
 
